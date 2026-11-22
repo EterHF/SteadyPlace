@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "force_feedback": true,
+  "coupled_approach": true,
+  "seed": 27,
+  "steps": 512,
+  "learning_starts": 448,
+  "buffer_size": 1024,
+  "save_policy": false
+}

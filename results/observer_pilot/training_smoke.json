@@ -1,0 +1,13 @@
+{
+  "device": "cpu",
+  "policy_steps": 512,
+  "updates": 64,
+  "actor_loss": -2.7309086322784424,
+  "critic_loss": 0.04306326061487198,
+  "argv": [
+    "python",
+    "-s",
+    "-m",
+    "sim.train"
+  ]
+}

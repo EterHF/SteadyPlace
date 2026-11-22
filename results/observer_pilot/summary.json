@@ -1,0 +1,126 @@
+{
+  "fixed_360_300": {
+    "n": 45,
+    "status_counts": {
+      "settled": 45
+    },
+    "mass_mae_g": 0.6920141183711185,
+    "detections_with_touch": 45,
+    "false_contacts": 0,
+    "early_opens": 0,
+    "contact_delay_range_ms": [
+      24.0,
+      28.0
+    ],
+    "contact_delay_p50_ms": 26.0,
+    "peak_force_p90_n": 17.531448898088307,
+    "max_peak_force_n": 17.85718702329593,
+    "mean_success_time_s": 5.984800000000001,
+    "mean_true_support_before_open_n": 3.217090490419991,
+    "support_mae_before_open_n": 0.0993079168478157
+  },
+  "phase_rule": {
+    "n": 45,
+    "status_counts": {
+      "settled": 44,
+      "impact_limit": 1
+    },
+    "mass_mae_g": 0.6920141183711185,
+    "detections_with_touch": 45,
+    "false_contacts": 0,
+    "early_opens": 0,
+    "contact_delay_range_ms": [
+      24.0,
+      28.0
+    ],
+    "contact_delay_p50_ms": 26.0,
+    "peak_force_p90_n": 18.970814908522282,
+    "max_peak_force_n": 20.357383079623084,
+    "mean_success_time_s": 6.173999999999999,
+    "mean_true_support_before_open_n": 3.1238815786691387,
+    "support_mae_before_open_n": 0.04898687164100152
+  },
+  "fixed_520_300": {
+    "n": 45,
+    "status_counts": {
+      "settled": 45
+    },
+    "mass_mae_g": 0.6920141183711185,
+    "detections_with_touch": 45,
+    "false_contacts": 0,
+    "early_opens": 0,
+    "contact_delay_range_ms": [
+      24.0,
+      28.0
+    ],
+    "contact_delay_p50_ms": 26.0,
+    "peak_force_p90_n": 17.554650932482147,
+    "max_peak_force_n": 17.740486131270238,
+    "mean_success_time_s": 5.988,
+    "mean_true_support_before_open_n": 3.2129159003030776,
+    "support_mae_before_open_n": 0.08617273945082052
+  },
+  "all_main": {
+    "n": 135,
+    "status_counts": {
+      "settled": 134,
+      "impact_limit": 1
+    },
+    "mass_mae_g": 0.6920141183711185,
+    "detections_with_touch": 135,
+    "false_contacts": 0,
+    "early_opens": 0,
+    "contact_delay_range_ms": [
+      24.0,
+      28.0
+    ],
+    "contact_delay_p50_ms": 26.0,
+    "peak_force_p90_n": 17.577908907617193,
+    "max_peak_force_n": 20.357383079623084,
+    "mean_success_time_s": 6.048,
+    "mean_true_support_before_open_n": 3.1846293231307357,
+    "support_mae_before_open_n": 0.07815584264654592
+  },
+  "observer_mass_bias": {
+    "0.98": {
+      "n": 6,
+      "status_counts": {
+        "settled": 6
+      },
+      "mass_mae_g": 117.52348171509311,
+      "detections_with_touch": 6,
+      "false_contacts": 0,
+      "early_opens": 0,
+      "contact_delay_range_ms": [
+        26.0,
+        30.0
+      ],
+      "contact_delay_p50_ms": 28.0,
+      "peak_force_p90_n": 16.84560340826528,
+      "max_peak_force_n": 17.705973324177386,
+      "mean_success_time_s": 6.0040000000000004,
+      "mean_true_support_before_open_n": 3.4170408429513253,
+      "support_mae_before_open_n": 0.2838285628638428
+    },
+    "1.02": {
+      "n": 6,
+      "status_counts": {
+        "settled": 6
+      },
+      "mass_mae_g": 118.6688281064278,
+      "detections_with_touch": 6,
+      "false_contacts": 0,
+      "early_opens": 0,
+      "contact_delay_range_ms": [
+        24.0,
+        26.0
+      ],
+      "contact_delay_p50_ms": 25.0,
+      "peak_force_p90_n": 16.84560340826528,
+      "max_peak_force_n": 17.705973324177386,
+      "mean_success_time_s": 5.971999999999999,
+      "mean_true_support_before_open_n": 3.0436190971332877,
+      "support_mae_before_open_n": 0.1311699620302246
+    }
+  }
+}

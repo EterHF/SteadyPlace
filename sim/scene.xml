@@ -1,0 +1,38 @@
+<mujoco model="disturbed-carry-and-place">
+  <option timestep="0.002" integrator="implicitfast" cone="elliptic" iterations="60" />
+  <visual>
+    <global offwidth="1280" offheight="800" />
+    <headlight ambient="0.48 0.48 0.48" diffuse="0.65 0.65 0.65" specular="0.15 0.15 0.15" />
+    <rgba haze="0.08 0.12 0.16 1" />
+  </visual>
+  <asset>
+    <texture name="floor_grid" type="2d" builtin="checker" rgb1="0.09 0.14 0.18"
+      rgb2="0.13 0.19 0.24" width="256" height="256" />
+    <material name="floor_mat" texture="floor_grid" texrepeat="6 6" texuniform="true" reflectance="0.08" />
+  </asset>
+  <worldbody>
+    <light pos="0.2 -0.5 1.8" dir="0.1 0.25 -1" directional="true" diffuse="0.82 0.81 0.78" />
+    <light pos="0.5 1.1 0.9" dir="-0.2 -0.6 -0.7" directional="true" diffuse="0.35 0.46 0.55" />
+    <camera name="overview" pos="1.42 0.72 1.05" xyaxes="-0.58 0.81 0 -0.37 -0.27 0.89" fovy="36" />
+    <geom name="floor" type="plane" pos="0 0 -0.025" size="2 2 0.1" material="floor_mat" />
+    <geom name="pedestal" type="cylinder" pos="0 0 -0.012" size="0.13 0.012" rgba="0.31 0.36 0.40 1"
+      contype="0" conaffinity="0" />
+    <geom name="source_table" type="box" pos="0.52 -0.21 0.055" size="0.19 0.17 0.065"
+      rgba="0.25 0.34 0.42 1" friction="0.75 0.01 0.001" />
+    <body name="target_table_body" pos="0.52 0.21 0.055">
+      <geom name="target_table" type="box" size="0.19 0.17 0.065" rgba="0.19 0.35 0.40 1"
+        friction="0.75 0.01 0.001" solref="0.012 1" solimp="0.92 0.98 0.001" />
+      <site name="target_zone" pos="0 0 0.0656" type="cylinder" size="0.068 0.0004"
+        rgba="0.29 0.83 0.78 0.48" />
+    </body>
+    <body name="payload" pos="0.52 -0.21 0.145">
+      <freejoint name="payload_joint" />
+      <geom name="payload_box" type="box" size="0.025 0.025 0.025" mass="0.25" rgba="0.98 0.57 0.22 1"
+        friction="0.9 0.01 0.001" solref="0.012 1" solimp="0.92 0.98 0.001" />
+    </body>
+  </worldbody>
+  <contact>
+    <pair name="landing_contact" geom1="target_table" geom2="payload_box" condim="3"
+      friction="0.65 0.65 0.005 0.0001 0.0001" solref="0.012 1" solimp="0.92 0.98 0.001" />
+  </contact>
+</mujoco>

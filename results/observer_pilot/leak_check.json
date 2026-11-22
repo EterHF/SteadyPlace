@@ -1,0 +1,9 @@
+{
+  "gym_space_39": true,
+  "observations_identical": true,
+  "approach_identical": true,
+  "gains_identical": true,
+  "nominal_torques_identical": true,
+  "release_identical": true,
+  "force_inversion_data_model": "robot_only"
+}

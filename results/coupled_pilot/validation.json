@@ -1,0 +1,18 @@
+{
+  "gymnasium_passed": true,
+  "obs_dim": 42,
+  "action_dim": 5,
+  "truth_perturbation_unchanged": true,
+  "pre_carry_traces_exact": true,
+  "example_peak_n": [
+    5.485687036790242,
+    17.95893870785811
+  ],
+  "example_time_s": [
+    4.516,
+    4.006
+  ],
+  "final_guard_checked": true,
+  "stationary_release_invariant_to_ground_truth": true,
+  "moving_tcp_refused_release": true
+}

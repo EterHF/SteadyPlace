@@ -1,0 +1,2679 @@
+{
+  "prior_benchmark": "results/challenge_benchmark/runs.json",
+  "controller": "fixed_520_300",
+  "seed": 241121,
+  "episodes": [
+    {
+      "profile": "constant_2n",
+      "height_mm": 0,
+      "context": 0,
+      "scenario": {
+        "mass": 0.279220461428441,
+        "friction": 0.7540076047446628,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": -157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.758,
+      "release_s": 3.836,
+      "contact_speed_z_m_s": -0.03486838508169472,
+      "peak_force_n": 15.345385263625335,
+      "impulse_100ms_n_s": 0.5037622892223621,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012812777522566678,
+      "rms_carry_error_m": 0.007663502252954284,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.003145400347554335,
+      "final_tilt_deg": 2.831646840510158e-06,
+      "elapsed_s": 4.626,
+      "footprint_margin_mm": 4.296671264353801,
+      "full_support": true,
+      "force_origin_s": 3.098,
+      "force_start_s": 3.098,
+      "force_end_s": 3.818,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.44,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 0,
+      "context": 0,
+      "scenario": {
+        "mass": 0.279220461428441,
+        "friction": 0.7540076047446628,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": -157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.756,
+      "release_s": 3.834,
+      "contact_speed_z_m_s": -0.03431111045333572,
+      "peak_force_n": 14.674088204370591,
+      "impulse_100ms_n_s": 0.4993074998704519,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012812777522566678,
+      "rms_carry_error_m": 0.007663502252954284,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0030821722526574685,
+      "final_tilt_deg": 3.306651113363206e-06,
+      "elapsed_s": 4.626,
+      "footprint_margin_mm": 4.360715409667437,
+      "full_support": true,
+      "force_origin_s": 3.098,
+      "force_start_s": 3.1,
+      "force_end_s": 3.818,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.318,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 0,
+      "context": 0,
+      "scenario": {
+        "mass": 0.279220461428441,
+        "friction": 0.7540076047446628,
+        "height": 0.0,
+        "pulse": 0.0,
+        "angle_deg": -157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.042,
+            0.15
+          ],
+          [
+            0.198,
+            0.314
+          ],
+          [
+            0.394,
+            0.508
+          ],
+          [
+            0.528,
+            0.61
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            1.2909104834131366,
+            3.7594947932041944
+          ],
+          [
+            -0.32693543294117666,
+            2.872151805425886
+          ],
+          [
+            2.481169198225137,
+            2.5740416431409177
+          ],
+          [
+            -0.8175324432935565,
+            1.0903018162906295
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.744,
+      "release_s": 3.822,
+      "contact_speed_z_m_s": -0.03831901865984056,
+      "peak_force_n": 15.4445290209026,
+      "impulse_100ms_n_s": 0.500699653654216,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012812777522566678,
+      "rms_carry_error_m": 0.007663502252954284,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0031414178815504213,
+      "final_tilt_deg": 8.537736462515939e-07,
+      "elapsed_s": 4.612,
+      "footprint_margin_mm": 4.750336032380925,
+      "full_support": true,
+      "force_origin_s": 3.098,
+      "force_start_s": 3.142,
+      "force_end_s": 3.708,
+      "force_peak_n": 3.974952952717225,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 1.189503902227841,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 20,
+      "context": 0,
+      "scenario": {
+        "mass": 0.279220461428441,
+        "friction": 0.7540076047446628,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": -157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.09,
+      "release_s": 3.168,
+      "contact_speed_z_m_s": -0.03461521117290073,
+      "peak_force_n": 12.46895760300945,
+      "impulse_100ms_n_s": 0.3917168119537517,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012812777522566678,
+      "rms_carry_error_m": 0.007663502252954284,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0009385719729415904,
+      "final_tilt_deg": 8.537736462515939e-07,
+      "elapsed_s": 3.958,
+      "footprint_margin_mm": 6.0797028280509915,
+      "full_support": true,
+      "force_origin_s": 2.776,
+      "force_start_s": 2.776,
+      "force_end_s": 3.168,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.784,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 20,
+      "context": 0,
+      "scenario": {
+        "mass": 0.279220461428441,
+        "friction": 0.7540076047446628,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": -157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.086,
+      "release_s": 3.164,
+      "contact_speed_z_m_s": -0.03585593945028193,
+      "peak_force_n": 12.504991849524991,
+      "impulse_100ms_n_s": 0.3899308215024585,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012812777522566678,
+      "rms_carry_error_m": 0.007663502252954284,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0007826284516249597,
+      "final_tilt_deg": 1.9090959104164224e-06,
+      "elapsed_s": 3.954,
+      "footprint_margin_mm": 6.2303086131954215,
+      "full_support": true,
+      "force_origin_s": 2.776,
+      "force_start_s": 2.778,
+      "force_end_s": 3.164,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.654,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 20,
+      "context": 0,
+      "scenario": {
+        "mass": 0.279220461428441,
+        "friction": 0.7540076047446628,
+        "height": 0.02,
+        "pulse": 0.0,
+        "angle_deg": -157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.042,
+            0.15
+          ],
+          [
+            0.198,
+            0.314
+          ],
+          [
+            0.394,
+            0.508
+          ],
+          [
+            0.528,
+            0.61
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            1.2909104834131366,
+            3.7594947932041944
+          ],
+          [
+            -0.32693543294117666,
+            2.872151805425886
+          ],
+          [
+            2.481169198225137,
+            2.5740416431409177
+          ],
+          [
+            -0.8175324432935565,
+            1.0903018162906295
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.1,
+      "release_s": 3.178,
+      "contact_speed_z_m_s": -0.03829142741310034,
+      "peak_force_n": 16.26305508379653,
+      "impulse_100ms_n_s": 0.45580042732194737,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012812777522566678,
+      "rms_carry_error_m": 0.007663502252954284,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005150122704182338,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 3.968,
+      "footprint_margin_mm": 2.6492835960541665,
+      "full_support": true,
+      "force_origin_s": 2.776,
+      "force_start_s": 2.82,
+      "force_end_s": 3.178,
+      "force_peak_n": 3.974952952717225,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.7143187517764659,
+      "actual_spans": 3
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 0,
+      "context": 1,
+      "scenario": {
+        "mass": 0.2840644333452863,
+        "friction": 0.6032264781216601,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": -112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.75,
+      "release_s": 3.828,
+      "contact_speed_z_m_s": -0.03477563144148186,
+      "peak_force_n": 15.035988493234047,
+      "impulse_100ms_n_s": 0.5045294633693754,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012819354019883737,
+      "rms_carry_error_m": 0.007666645720122406,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.003736624052223706,
+      "final_tilt_deg": 8.537736462515939e-07,
+      "elapsed_s": 4.618,
+      "footprint_margin_mm": 3.2700873878896037,
+      "full_support": true,
+      "force_origin_s": 3.094,
+      "force_start_s": 3.094,
+      "force_end_s": 3.814,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.44,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 0,
+      "context": 1,
+      "scenario": {
+        "mass": 0.2840644333452863,
+        "friction": 0.6032264781216601,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": -112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.75,
+      "release_s": 3.828,
+      "contact_speed_z_m_s": -0.03444506596731885,
+      "peak_force_n": 15.05289806595576,
+      "impulse_100ms_n_s": 0.5021273346469579,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012819354019883737,
+      "rms_carry_error_m": 0.007666645720122406,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0037363556147229954,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.618,
+      "footprint_margin_mm": 3.265516203933474,
+      "full_support": true,
+      "force_origin_s": 3.094,
+      "force_start_s": 3.096,
+      "force_end_s": 3.814,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.318,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 0,
+      "context": 1,
+      "scenario": {
+        "mass": 0.2840644333452863,
+        "friction": 0.6032264781216601,
+        "height": 0.0,
+        "pulse": 0.0,
+        "angle_deg": -112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.018,
+            0.094
+          ],
+          [
+            0.218,
+            0.294
+          ],
+          [
+            0.388,
+            0.484
+          ],
+          [
+            0.568,
+            0.65
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -2.5875898961626747,
+            -1.891409157417088
+          ],
+          [
+            -0.10028974683837562,
+            1.0006745106885444
+          ],
+          [
+            -2.1895465893165333,
+            0.8309852262371573
+          ],
+          [
+            -2.264000240117049,
+            1.544436923257537
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.744,
+      "release_s": 3.822,
+      "contact_speed_z_m_s": -0.03700355885620841,
+      "peak_force_n": 15.073913811306138,
+      "impulse_100ms_n_s": 0.5008216669881007,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012819354019883737,
+      "rms_carry_error_m": 0.007666645720122406,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0014051453777781955,
+      "final_tilt_deg": 1.9090959104164224e-06,
+      "elapsed_s": 4.612,
+      "footprint_margin_mm": 5.875410606714267,
+      "full_support": true,
+      "force_origin_s": 3.094,
+      "force_start_s": 3.114,
+      "force_end_s": 3.744,
+      "force_peak_n": 3.20515991355882,
+      "force_at_touch_n": 2.7406171745012586,
+      "force_impulse_n_s": 0.6952334145923009,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 20,
+      "context": 1,
+      "scenario": {
+        "mass": 0.2840644333452863,
+        "friction": 0.6032264781216601,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": -112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.086,
+      "release_s": 3.164,
+      "contact_speed_z_m_s": -0.035904399561090705,
+      "peak_force_n": 12.398733046228408,
+      "impulse_100ms_n_s": 0.4099018946600559,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012819354019883737,
+      "rms_carry_error_m": 0.007666645720122406,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0034756104143275333,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 3.954,
+      "footprint_margin_mm": 3.975846968533824,
+      "full_support": true,
+      "force_origin_s": 2.776,
+      "force_start_s": 2.776,
+      "force_end_s": 3.164,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.776,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 20,
+      "context": 1,
+      "scenario": {
+        "mass": 0.2840644333452863,
+        "friction": 0.6032264781216601,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": -112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.084,
+      "release_s": 3.162,
+      "contact_speed_z_m_s": -0.03667972544333681,
+      "peak_force_n": 12.58387120595879,
+      "impulse_100ms_n_s": 0.41108183367543605,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012819354019883737,
+      "rms_carry_error_m": 0.007666645720122406,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0032790295137116324,
+      "final_tilt_deg": 1.2074182697257333e-06,
+      "elapsed_s": 3.952,
+      "footprint_margin_mm": 4.323147020782368,
+      "full_support": true,
+      "force_origin_s": 2.776,
+      "force_start_s": 2.778,
+      "force_end_s": 3.162,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.65,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 20,
+      "context": 1,
+      "scenario": {
+        "mass": 0.2840644333452863,
+        "friction": 0.6032264781216601,
+        "height": 0.02,
+        "pulse": 0.0,
+        "angle_deg": -112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.018,
+            0.094
+          ],
+          [
+            0.218,
+            0.294
+          ],
+          [
+            0.388,
+            0.484
+          ],
+          [
+            0.568,
+            0.65
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -2.5875898961626747,
+            -1.891409157417088
+          ],
+          [
+            -0.10028974683837562,
+            1.0006745106885444
+          ],
+          [
+            -2.1895465893165333,
+            0.8309852262371573
+          ],
+          [
+            -2.264000240117049,
+            1.544436923257537
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.1,
+      "release_s": 3.178,
+      "contact_speed_z_m_s": -0.03437746049558451,
+      "peak_force_n": 14.731959697391588,
+      "impulse_100ms_n_s": 0.4403345458852755,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012819354019883737,
+      "rms_carry_error_m": 0.007666645720122406,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.002060138937748179,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 3.968,
+      "footprint_margin_mm": 4.976694739265489,
+      "full_support": true,
+      "force_origin_s": 2.776,
+      "force_start_s": 2.796,
+      "force_end_s": 3.178,
+      "force_peak_n": 3.20515991355882,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.3003892282863491,
+      "actual_spans": 3
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 0,
+      "context": 2,
+      "scenario": {
+        "mass": 0.2945899261810011,
+        "friction": 0.5107703517634163,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": -67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.736,
+      "release_s": 3.814,
+      "contact_speed_z_m_s": -0.034796097551155904,
+      "peak_force_n": 15.618397234151377,
+      "impulse_100ms_n_s": 0.5108201633204225,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012833639979777343,
+      "rms_carry_error_m": 0.007673473619033767,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.004794644564550372,
+      "final_tilt_deg": 3.6222548091772e-06,
+      "elapsed_s": 4.604,
+      "footprint_margin_mm": 3.2683163481437294,
+      "full_support": true,
+      "force_origin_s": 3.084,
+      "force_start_s": 3.084,
+      "force_end_s": 3.804,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.44,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 0,
+      "context": 2,
+      "scenario": {
+        "mass": 0.2945899261810011,
+        "friction": 0.5107703517634163,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": -67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.736,
+      "release_s": 3.814,
+      "contact_speed_z_m_s": -0.03485060904220782,
+      "peak_force_n": 15.697387508316968,
+      "impulse_100ms_n_s": 0.5120048304694165,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012833639979777343,
+      "rms_carry_error_m": 0.007673473619033767,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.004813399874997072,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.604,
+      "footprint_margin_mm": 3.2439518629306385,
+      "full_support": true,
+      "force_origin_s": 3.084,
+      "force_start_s": 3.086,
+      "force_end_s": 3.804,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.318,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 0,
+      "context": 2,
+      "scenario": {
+        "mass": 0.2945899261810011,
+        "friction": 0.5107703517634163,
+        "height": 0.0,
+        "pulse": 0.0,
+        "angle_deg": -67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.026,
+            0.134
+          ],
+          [
+            0.198,
+            0.286
+          ],
+          [
+            0.396,
+            0.49
+          ],
+          [
+            0.524,
+            0.628
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -0.19847063563261577,
+            -3.3266545195089186
+          ],
+          [
+            1.2804521134018532,
+            0.49453992633664096
+          ],
+          [
+            -0.25988408536249336,
+            2.2705711518422595
+          ],
+          [
+            1.860549427657803,
+            -0.9094190115486019
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.744,
+      "release_s": 3.822,
+      "contact_speed_z_m_s": -0.037174211789187346,
+      "peak_force_n": 18.24620100924381,
+      "impulse_100ms_n_s": 0.5417712935793,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012833639979777343,
+      "rms_carry_error_m": 0.007673473619033767,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.00261558942833477,
+      "final_tilt_deg": 2.2588727439225506e-06,
+      "elapsed_s": 4.612,
+      "footprint_margin_mm": 4.382704776245676,
+      "full_support": true,
+      "force_origin_s": 3.084,
+      "force_start_s": 3.112,
+      "force_end_s": 3.712,
+      "force_peak_n": 3.3325697120056663,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.838419606193065,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 20,
+      "context": 2,
+      "scenario": {
+        "mass": 0.2945899261810011,
+        "friction": 0.5107703517634163,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": -67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.082,
+      "release_s": 3.16,
+      "contact_speed_z_m_s": -0.03800477671052493,
+      "peak_force_n": 14.329928531084745,
+      "impulse_100ms_n_s": 0.45597469626497455,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012833639979777343,
+      "rms_carry_error_m": 0.007673473619033767,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005499584027935849,
+      "final_tilt_deg": 2.091309789151873e-06,
+      "elapsed_s": 3.95,
+      "footprint_margin_mm": 2.5168529023727357,
+      "full_support": true,
+      "force_origin_s": 2.772,
+      "force_start_s": 2.772,
+      "force_end_s": 3.16,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.776,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 20,
+      "context": 2,
+      "scenario": {
+        "mass": 0.2945899261810011,
+        "friction": 0.5107703517634163,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": -67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.084,
+      "release_s": 3.162,
+      "contact_speed_z_m_s": -0.03774796633524212,
+      "peak_force_n": 15.627379930400792,
+      "impulse_100ms_n_s": 0.4612691151490507,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012833639979777343,
+      "rms_carry_error_m": 0.007673473619033767,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005191964054401013,
+      "final_tilt_deg": 3.4150945850063763e-06,
+      "elapsed_s": 3.952,
+      "footprint_margin_mm": 2.677710614525493,
+      "full_support": true,
+      "force_origin_s": 2.772,
+      "force_start_s": 2.774,
+      "force_end_s": 3.162,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.658,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 20,
+      "context": 2,
+      "scenario": {
+        "mass": 0.2945899261810011,
+        "friction": 0.5107703517634163,
+        "height": 0.02,
+        "pulse": 0.0,
+        "angle_deg": -67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.026,
+            0.134
+          ],
+          [
+            0.198,
+            0.286
+          ],
+          [
+            0.396,
+            0.49
+          ],
+          [
+            0.524,
+            0.628
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -0.19847063563261577,
+            -3.3266545195089186
+          ],
+          [
+            1.2804521134018532,
+            0.49453992633664096
+          ],
+          [
+            -0.25988408536249336,
+            2.2705711518422595
+          ],
+          [
+            1.860549427657803,
+            -0.9094190115486019
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.092,
+      "release_s": 3.17,
+      "contact_speed_z_m_s": -0.03647085185478074,
+      "peak_force_n": 16.759302241975433,
+      "impulse_100ms_n_s": 0.46408889114635643,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012833639979777343,
+      "rms_carry_error_m": 0.007673473619033767,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0036390670600490805,
+      "final_tilt_deg": 1.2074182697257333e-06,
+      "elapsed_s": 3.96,
+      "footprint_margin_mm": 3.436583297680245,
+      "full_support": true,
+      "force_origin_s": 2.772,
+      "force_start_s": 2.8,
+      "force_end_s": 3.058,
+      "force_peak_n": 3.3325697120056663,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.44306778606923275,
+      "actual_spans": 2
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 0,
+      "context": 3,
+      "scenario": {
+        "mass": 0.2981365263175315,
+        "friction": 0.6519475919496792,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": -22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.728,
+      "release_s": 3.806,
+      "contact_speed_z_m_s": -0.03495767579678615,
+      "peak_force_n": 15.66321152440997,
+      "impulse_100ms_n_s": 0.5079699015292893,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012838452306525156,
+      "rms_carry_error_m": 0.007675773690065363,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005353552191870696,
+      "final_tilt_deg": 2.699869328381916e-06,
+      "elapsed_s": 4.596,
+      "footprint_margin_mm": 1.8906911442903782,
+      "full_support": true,
+      "force_origin_s": 3.08,
+      "force_start_s": 3.08,
+      "force_end_s": 3.8,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.44,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 0,
+      "context": 3,
+      "scenario": {
+        "mass": 0.2981365263175315,
+        "friction": 0.6519475919496792,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": -22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.73,
+      "release_s": 3.808,
+      "contact_speed_z_m_s": -0.03538673389991298,
+      "peak_force_n": 17.11318140212733,
+      "impulse_100ms_n_s": 0.518156183192252,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012838452306525156,
+      "rms_carry_error_m": 0.007675773690065363,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005309029270730234,
+      "final_tilt_deg": 2.561320938754782e-06,
+      "elapsed_s": 4.598,
+      "footprint_margin_mm": 1.9447298784188403,
+      "full_support": true,
+      "force_origin_s": 3.08,
+      "force_start_s": 3.082,
+      "force_end_s": 3.8,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.318,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 0,
+      "context": 3,
+      "scenario": {
+        "mass": 0.2981365263175315,
+        "friction": 0.6519475919496792,
+        "height": 0.0,
+        "pulse": 0.0,
+        "angle_deg": -22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.014,
+            0.108
+          ],
+          [
+            0.176,
+            0.268
+          ],
+          [
+            0.398,
+            0.512
+          ],
+          [
+            0.528,
+            0.628
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            1.9048532493846217,
+            -1.2991973301029942
+          ],
+          [
+            0.02218460759526726,
+            2.4367493417702857
+          ],
+          [
+            -0.29839250928908545,
+            -2.5874677088701628
+          ],
+          [
+            -0.2698130310866995,
+            1.2022474186915255
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.73,
+      "release_s": 3.808,
+      "contact_speed_z_m_s": -0.03261036343804094,
+      "peak_force_n": 15.36740404834432,
+      "impulse_100ms_n_s": 0.4894191542355055,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012838452306525156,
+      "rms_carry_error_m": 0.007675773690065363,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0012122080932077009,
+      "final_tilt_deg": 2.831646840510158e-06,
+      "elapsed_s": 4.598,
+      "footprint_margin_mm": 5.9318555892697615,
+      "full_support": true,
+      "force_origin_s": 3.08,
+      "force_start_s": 3.096,
+      "force_end_s": 3.708,
+      "force_peak_n": 2.6046165234148475,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.7924353101809719,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 20,
+      "context": 3,
+      "scenario": {
+        "mass": 0.2981365263175315,
+        "friction": 0.6519475919496792,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": -22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.086,
+      "release_s": 3.164,
+      "contact_speed_z_m_s": -0.03909571453525305,
+      "peak_force_n": 17.797681163825047,
+      "impulse_100ms_n_s": 0.49288737005400335,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012838452306525156,
+      "rms_carry_error_m": 0.007675773690065363,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.006073574534465805,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 3.954,
+      "footprint_margin_mm": 1.0707071213310881,
+      "full_support": true,
+      "force_origin_s": 2.77,
+      "force_start_s": 2.77,
+      "force_end_s": 3.164,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.788,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 20,
+      "context": 3,
+      "scenario": {
+        "mass": 0.2981365263175315,
+        "friction": 0.6519475919496792,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": -22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.088,
+      "release_s": 3.166,
+      "contact_speed_z_m_s": -0.03837174964590826,
+      "peak_force_n": 17.62655071858574,
+      "impulse_100ms_n_s": 0.4930310355233559,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012838452306525156,
+      "rms_carry_error_m": 0.007675773690065363,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005687999588208463,
+      "final_tilt_deg": 2.2588727439225506e-06,
+      "elapsed_s": 3.956,
+      "footprint_margin_mm": 1.4409746986185565,
+      "full_support": true,
+      "force_origin_s": 2.77,
+      "force_start_s": 2.772,
+      "force_end_s": 3.166,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.67,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 20,
+      "context": 3,
+      "scenario": {
+        "mass": 0.2981365263175315,
+        "friction": 0.6519475919496792,
+        "height": 0.02,
+        "pulse": 0.0,
+        "angle_deg": -22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.014,
+            0.108
+          ],
+          [
+            0.176,
+            0.268
+          ],
+          [
+            0.398,
+            0.512
+          ],
+          [
+            0.528,
+            0.628
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            1.9048532493846217,
+            -1.2991973301029942
+          ],
+          [
+            0.02218460759526726,
+            2.4367493417702857
+          ],
+          [
+            -0.29839250928908545,
+            -2.5874677088701628
+          ],
+          [
+            -0.2698130310866995,
+            1.2022474186915255
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.08,
+      "release_s": 3.158,
+      "contact_speed_z_m_s": -0.03979007795032899,
+      "peak_force_n": 16.3784132151693,
+      "impulse_100ms_n_s": 0.4651152107331804,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012838452306525156,
+      "rms_carry_error_m": 0.007675773690065363,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0036203295843372507,
+      "final_tilt_deg": 3.1945284701301985e-06,
+      "elapsed_s": 3.948,
+      "footprint_margin_mm": 3.6978156240329088,
+      "full_support": true,
+      "force_origin_s": 2.77,
+      "force_start_s": 2.786,
+      "force_end_s": 3.038,
+      "force_peak_n": 2.4368503260217023,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.4029879979802442,
+      "actual_spans": 2
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 0,
+      "context": 4,
+      "scenario": {
+        "mass": 0.22045302160678673,
+        "friction": 0.6309456015780877,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": 22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.81,
+      "release_s": 3.888,
+      "contact_speed_z_m_s": -0.0359902412965886,
+      "peak_force_n": 14.326241498511845,
+      "impulse_100ms_n_s": 0.49869277178352883,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012732940278849664,
+      "rms_carry_error_m": 0.007625332756160146,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005464550209258912,
+      "final_tilt_deg": 1.2074182697257333e-06,
+      "elapsed_s": 4.678,
+      "footprint_margin_mm": 1.704695546941127,
+      "full_support": true,
+      "force_origin_s": 3.166,
+      "force_start_s": 3.166,
+      "force_end_s": 3.886,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.44,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 0,
+      "context": 4,
+      "scenario": {
+        "mass": 0.22045302160678673,
+        "friction": 0.6309456015780877,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": 22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.812,
+      "release_s": 3.89,
+      "contact_speed_z_m_s": -0.036524494429470124,
+      "peak_force_n": 14.902315841169585,
+      "impulse_100ms_n_s": 0.5099574899286986,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012732940278849664,
+      "rms_carry_error_m": 0.007625332756160146,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005390039314651904,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.682,
+      "footprint_margin_mm": 1.777001479969443,
+      "full_support": true,
+      "force_origin_s": 3.166,
+      "force_start_s": 3.168,
+      "force_end_s": 3.886,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.318,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 0,
+      "context": 4,
+      "scenario": {
+        "mass": 0.22045302160678673,
+        "friction": 0.6309456015780877,
+        "height": 0.0,
+        "pulse": 0.0,
+        "angle_deg": 22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.038,
+            0.156
+          ],
+          [
+            0.19,
+            0.278
+          ],
+          [
+            0.352,
+            0.456
+          ],
+          [
+            0.574,
+            0.66
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -0.5081467321412279,
+            -0.8919646153971901
+          ],
+          [
+            1.349200489370813,
+            -0.10134516321997503
+          ],
+          [
+            2.196219018188673,
+            -0.2977667074928846
+          ],
+          [
+            -0.46908612358149865,
+            -1.4049192530162682
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.808,
+      "release_s": 3.886,
+      "contact_speed_z_m_s": -0.039559034900269255,
+      "peak_force_n": 14.454561712750357,
+      "impulse_100ms_n_s": 0.4907414546752886,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012732940278849664,
+      "rms_carry_error_m": 0.007625332756160146,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0023235365064048817,
+      "final_tilt_deg": 1.2074182697257333e-06,
+      "elapsed_s": 4.676,
+      "footprint_margin_mm": 4.810754179867694,
+      "full_support": true,
+      "force_origin_s": 3.166,
+      "force_start_s": 3.206,
+      "force_end_s": 3.826,
+      "force_peak_n": 2.216312926448964,
+      "force_at_touch_n": 1.4811616720778682,
+      "force_impulse_n_s": 0.5494577499433964,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 20,
+      "context": 4,
+      "scenario": {
+        "mass": 0.22045302160678673,
+        "friction": 0.6309456015780877,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": 22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.174,
+      "release_s": 3.252,
+      "contact_speed_z_m_s": -0.03254681288669089,
+      "peak_force_n": 13.002527080902421,
+      "impulse_100ms_n_s": 0.4173550181555445,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012732940278849664,
+      "rms_carry_error_m": 0.007625332756160146,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.006242481319062332,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.042,
+      "footprint_margin_mm": 0.9528210495699345,
+      "full_support": true,
+      "force_origin_s": 2.8,
+      "force_start_s": 2.8,
+      "force_end_s": 3.252,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.904,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 20,
+      "context": 4,
+      "scenario": {
+        "mass": 0.22045302160678673,
+        "friction": 0.6309456015780877,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": 22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.178,
+      "release_s": 3.256,
+      "contact_speed_z_m_s": -0.03219306561039226,
+      "peak_force_n": 12.905587800520518,
+      "impulse_100ms_n_s": 0.4203276929372687,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012732940278849664,
+      "rms_carry_error_m": 0.007625332756160146,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005934092292132221,
+      "final_tilt_deg": 1.9090959104164224e-06,
+      "elapsed_s": 4.046,
+      "footprint_margin_mm": 1.2472069084027253,
+      "full_support": true,
+      "force_origin_s": 2.8,
+      "force_start_s": 2.802,
+      "force_end_s": 3.256,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.79,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 20,
+      "context": 4,
+      "scenario": {
+        "mass": 0.22045302160678673,
+        "friction": 0.6309456015780877,
+        "height": 0.02,
+        "pulse": 0.0,
+        "angle_deg": 22.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.038,
+            0.156
+          ],
+          [
+            0.19,
+            0.278
+          ],
+          [
+            0.352,
+            0.456
+          ],
+          [
+            0.574,
+            0.66
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -0.5081467321412279,
+            -0.8919646153971901
+          ],
+          [
+            1.349200489370813,
+            -0.10134516321997503
+          ],
+          [
+            2.196219018188673,
+            -0.2977667074928846
+          ],
+          [
+            -0.46908612358149865,
+            -1.4049192530162682
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.174,
+      "release_s": 3.254,
+      "contact_speed_z_m_s": -0.028939060383630196,
+      "peak_force_n": 11.371615980981016,
+      "impulse_100ms_n_s": 0.39280622236155893,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012732940278849664,
+      "rms_carry_error_m": 0.007625332756160146,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.003518798800132972,
+      "final_tilt_deg": 2.091309789151873e-06,
+      "elapsed_s": 4.046,
+      "footprint_margin_mm": 3.477068757172731,
+      "full_support": true,
+      "force_origin_s": 2.8,
+      "force_start_s": 2.84,
+      "force_end_s": 3.254,
+      "force_peak_n": 2.216312926448964,
+      "force_at_touch_n": 2.216312926448964,
+      "force_impulse_n_s": 0.4294945136684247,
+      "actual_spans": 3
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 0,
+      "context": 5,
+      "scenario": {
+        "mass": 0.2009602653970021,
+        "friction": 0.4677996768816884,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": 67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.832,
+      "release_s": 3.91,
+      "contact_speed_z_m_s": -0.03611835434902474,
+      "peak_force_n": 13.501873837177051,
+      "impulse_100ms_n_s": 0.49304684932720755,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012706459230249082,
+      "rms_carry_error_m": 0.0076126697825916025,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.004807534526155991,
+      "final_tilt_deg": 2.699869328381916e-06,
+      "elapsed_s": 4.7,
+      "footprint_margin_mm": 3.4651849967161605,
+      "full_support": true,
+      "force_origin_s": 3.192,
+      "force_start_s": 3.192,
+      "force_end_s": 3.91,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.436,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 0,
+      "context": 5,
+      "scenario": {
+        "mass": 0.2009602653970021,
+        "friction": 0.4677996768816884,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": 67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.834,
+      "release_s": 3.912,
+      "contact_speed_z_m_s": -0.03646282573740763,
+      "peak_force_n": 13.987110091825874,
+      "impulse_100ms_n_s": 0.5023102789454509,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012706459230249082,
+      "rms_carry_error_m": 0.0076126697825916025,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.004776039632034578,
+      "final_tilt_deg": 2.831646840510158e-06,
+      "elapsed_s": 4.702,
+      "footprint_margin_mm": 3.463307233637105,
+      "full_support": true,
+      "force_origin_s": 3.192,
+      "force_start_s": 3.194,
+      "force_end_s": 3.912,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.318,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 0,
+      "context": 5,
+      "scenario": {
+        "mass": 0.2009602653970021,
+        "friction": 0.4677996768816884,
+        "height": 0.0,
+        "pulse": 0.0,
+        "angle_deg": 67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.028,
+            0.116
+          ],
+          [
+            0.176,
+            0.278
+          ],
+          [
+            0.394,
+            0.506
+          ],
+          [
+            0.522,
+            0.608
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -2.077619006041616,
+            -1.9398079629661884
+          ],
+          [
+            -0.882217605114086,
+            0.9994178215097684
+          ],
+          [
+            2.45796038104816,
+            -0.05193985717947863
+          ],
+          [
+            0.5416958778980304,
+            -1.563578761576373
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.84,
+      "release_s": 3.918,
+      "contact_speed_z_m_s": -0.040359329301684656,
+      "peak_force_n": 14.25200637239671,
+      "impulse_100ms_n_s": 0.5236805093281809,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012706459230249082,
+      "rms_carry_error_m": 0.0076126697825916025,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0032242021245750315,
+      "final_tilt_deg": 3.4150945850063763e-06,
+      "elapsed_s": 4.708,
+      "footprint_margin_mm": 4.018006826312488,
+      "full_support": true,
+      "force_origin_s": 3.192,
+      "force_start_s": 3.222,
+      "force_end_s": 3.8,
+      "force_peak_n": 2.8424207407511624,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.7374604551130317,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 20,
+      "context": 5,
+      "scenario": {
+        "mass": 0.2009602653970021,
+        "friction": 0.4677996768816884,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": 67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.196,
+      "release_s": 3.274,
+      "contact_speed_z_m_s": -0.03061493942802708,
+      "peak_force_n": 11.036626030212418,
+      "impulse_100ms_n_s": 0.38543785439858813,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012706459230249082,
+      "rms_carry_error_m": 0.0076126697825916025,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005670014933638209,
+      "final_tilt_deg": 1.7075472925031877e-06,
+      "elapsed_s": 4.064,
+      "footprint_margin_mm": 2.7688697811519245,
+      "full_support": true,
+      "force_origin_s": 2.808,
+      "force_start_s": 2.808,
+      "force_end_s": 3.274,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.932,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 20,
+      "context": 5,
+      "scenario": {
+        "mass": 0.2009602653970021,
+        "friction": 0.4677996768816884,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": 67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.2,
+      "release_s": 3.278,
+      "contact_speed_z_m_s": -0.030389047239303472,
+      "peak_force_n": 11.194091689679917,
+      "impulse_100ms_n_s": 0.39122625054372456,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012706459230249082,
+      "rms_carry_error_m": 0.0076126697825916025,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.005463151917711207,
+      "final_tilt_deg": 2.699869328381916e-06,
+      "elapsed_s": 4.07,
+      "footprint_margin_mm": 2.919211457961136,
+      "full_support": true,
+      "force_origin_s": 2.808,
+      "force_start_s": 2.81,
+      "force_end_s": 3.278,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.8180000000000001,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 20,
+      "context": 5,
+      "scenario": {
+        "mass": 0.2009602653970021,
+        "friction": 0.4677996768816884,
+        "height": 0.02,
+        "pulse": 0.0,
+        "angle_deg": 67.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.028,
+            0.116
+          ],
+          [
+            0.176,
+            0.278
+          ],
+          [
+            0.394,
+            0.506
+          ],
+          [
+            0.522,
+            0.608
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -2.077619006041616,
+            -1.9398079629661884
+          ],
+          [
+            -0.882217605114086,
+            0.9994178215097684
+          ],
+          [
+            2.45796038104816,
+            -0.05193985717947863
+          ],
+          [
+            0.5416958778980304,
+            -1.563578761576373
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.2,
+      "release_s": 3.37,
+      "contact_speed_z_m_s": -0.02747014181488252,
+      "peak_force_n": 9.718049016322933,
+      "impulse_100ms_n_s": 0.3230510575082247,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012706459230249082,
+      "rms_carry_error_m": 0.0076126697825916025,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0032809401226760143,
+      "final_tilt_deg": 1.2074182697257333e-06,
+      "elapsed_s": 4.16,
+      "footprint_margin_mm": 3.7029335725197594,
+      "full_support": true,
+      "force_origin_s": 2.808,
+      "force_start_s": 2.838,
+      "force_end_s": 3.37,
+      "force_peak_n": 2.8424207407511624,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.6613417409894219,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 0,
+      "context": 6,
+      "scenario": {
+        "mass": 0.24173155508987562,
+        "friction": 0.7220213999178162,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": 112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.792,
+      "release_s": 3.87,
+      "contact_speed_z_m_s": -0.035577994294583665,
+      "peak_force_n": 14.29944968308757,
+      "impulse_100ms_n_s": 0.5042028306974542,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012761854221846674,
+      "rms_carry_error_m": 0.007639157986140124,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.003502947255812259,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.66,
+      "footprint_margin_mm": 3.492602203838055,
+      "full_support": true,
+      "force_origin_s": 3.14,
+      "force_start_s": 3.14,
+      "force_end_s": 3.86,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.44,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 0,
+      "context": 6,
+      "scenario": {
+        "mass": 0.24173155508987562,
+        "friction": 0.7220213999178162,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": 112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.794,
+      "release_s": 3.872,
+      "contact_speed_z_m_s": -0.03554672912108203,
+      "peak_force_n": 15.348366367672337,
+      "impulse_100ms_n_s": 0.5101338490324165,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012761854221846674,
+      "rms_carry_error_m": 0.007639157986140124,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0035222087272254246,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.662,
+      "footprint_margin_mm": 3.4718087608432806,
+      "full_support": true,
+      "force_origin_s": 3.14,
+      "force_start_s": 3.142,
+      "force_end_s": 3.86,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.318,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 0,
+      "context": 6,
+      "scenario": {
+        "mass": 0.24173155508987562,
+        "friction": 0.7220213999178162,
+        "height": 0.0,
+        "pulse": 0.0,
+        "angle_deg": 112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.012,
+            0.112
+          ],
+          [
+            0.208,
+            0.29
+          ],
+          [
+            0.354,
+            0.458
+          ],
+          [
+            0.546,
+            0.624
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -0.15284039397243765,
+            1.0126742979223557
+          ],
+          [
+            -0.26051159173717536,
+            -2.7109044911116373
+          ],
+          [
+            0.9851481390070952,
+            -0.8413734222399685
+          ],
+          [
+            -0.46124977906465925,
+            3.334055938149984
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.794,
+      "release_s": 3.872,
+      "contact_speed_z_m_s": -0.0363538959174767,
+      "peak_force_n": 13.370859310451667,
+      "impulse_100ms_n_s": 0.5053389543934848,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012761854221846674,
+      "rms_carry_error_m": 0.007639157986140124,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0018174625579955917,
+      "final_tilt_deg": 3.078324659199975e-06,
+      "elapsed_s": 4.662,
+      "footprint_margin_mm": 5.632778357619297,
+      "full_support": true,
+      "force_origin_s": 3.14,
+      "force_start_s": 3.154,
+      "force_end_s": 3.764,
+      "force_peak_n": 3.36581050527215,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.6557309191444942,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 20,
+      "context": 6,
+      "scenario": {
+        "mass": 0.24173155508987562,
+        "friction": 0.7220213999178162,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": 112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.142,
+      "release_s": 3.22,
+      "contact_speed_z_m_s": -0.03198544186857287,
+      "peak_force_n": 12.663343654431515,
+      "impulse_100ms_n_s": 0.390090915597603,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012761854221846674,
+      "rms_carry_error_m": 0.007639157986140124,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.004078015690061102,
+      "final_tilt_deg": 2.2588727439225506e-06,
+      "elapsed_s": 4.012,
+      "footprint_margin_mm": 3.072810879672424,
+      "full_support": true,
+      "force_origin_s": 2.792,
+      "force_start_s": 2.792,
+      "force_end_s": 3.22,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.856,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 20,
+      "context": 6,
+      "scenario": {
+        "mass": 0.24173155508987562,
+        "friction": 0.7220213999178162,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": 112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.142,
+      "release_s": 3.22,
+      "contact_speed_z_m_s": -0.03196622417388872,
+      "peak_force_n": 12.63915249051129,
+      "impulse_100ms_n_s": 0.3917096452096295,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012761854221846674,
+      "rms_carry_error_m": 0.007639157986140124,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.003913692286661246,
+      "final_tilt_deg": 1.4787793334710982e-06,
+      "elapsed_s": 4.012,
+      "footprint_margin_mm": 3.2840000052601557,
+      "full_support": true,
+      "force_origin_s": 2.792,
+      "force_start_s": 2.794,
+      "force_end_s": 3.22,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.734,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 20,
+      "context": 6,
+      "scenario": {
+        "mass": 0.24173155508987562,
+        "friction": 0.7220213999178162,
+        "height": 0.02,
+        "pulse": 0.0,
+        "angle_deg": 112.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.012,
+            0.112
+          ],
+          [
+            0.208,
+            0.29
+          ],
+          [
+            0.354,
+            0.458
+          ],
+          [
+            0.546,
+            0.624
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            -0.15284039397243765,
+            1.0126742979223557
+          ],
+          [
+            -0.26051159173717536,
+            -2.7109044911116373
+          ],
+          [
+            0.9851481390070952,
+            -0.8413734222399685
+          ],
+          [
+            -0.46124977906465925,
+            3.334055938149984
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.136,
+      "release_s": 3.214,
+      "contact_speed_z_m_s": -0.03167151356925817,
+      "peak_force_n": 11.403816904113704,
+      "impulse_100ms_n_s": 0.387414695808972,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012761854221846674,
+      "rms_carry_error_m": 0.007639157986140124,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0030197949110081987,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.006,
+      "footprint_margin_mm": 4.195019478590227,
+      "full_support": true,
+      "force_origin_s": 2.792,
+      "force_start_s": 2.806,
+      "force_end_s": 3.214,
+      "force_peak_n": 2.723393003104525,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.3734847132112591,
+      "actual_spans": 3
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 0,
+      "context": 7,
+      "scenario": {
+        "mass": 0.22753447503718405,
+        "friction": 0.456364542888835,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": 157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.812,
+      "release_s": 3.89,
+      "contact_speed_z_m_s": -0.03549903999529621,
+      "peak_force_n": 14.609849644755927,
+      "impulse_100ms_n_s": 0.5057965202287714,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012742562584909975,
+      "rms_carry_error_m": 0.007629933692362985,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.002538713403155784,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.682,
+      "footprint_margin_mm": 4.841363575469003,
+      "full_support": true,
+      "force_origin_s": 3.158,
+      "force_start_s": 3.158,
+      "force_end_s": 3.878,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.44,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 0,
+      "context": 7,
+      "scenario": {
+        "mass": 0.22753447503718405,
+        "friction": 0.456364542888835,
+        "height": 0.0,
+        "pulse": 2.0,
+        "angle_deg": 157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.81,
+      "release_s": 3.888,
+      "contact_speed_z_m_s": -0.03506194917171315,
+      "peak_force_n": 13.519688609330577,
+      "impulse_100ms_n_s": 0.4946227616167605,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012742562584909975,
+      "rms_carry_error_m": 0.007629933692362985,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0025247636044756485,
+      "final_tilt_deg": 2.561320938754782e-06,
+      "elapsed_s": 4.678,
+      "footprint_margin_mm": 4.878357459662395,
+      "full_support": true,
+      "force_origin_s": 3.158,
+      "force_start_s": 3.16,
+      "force_end_s": 3.878,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 1.318,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 0,
+      "context": 7,
+      "scenario": {
+        "mass": 0.22753447503718405,
+        "friction": 0.456364542888835,
+        "height": 0.0,
+        "pulse": 0.0,
+        "angle_deg": 157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.034,
+            0.14
+          ],
+          [
+            0.198,
+            0.274
+          ],
+          [
+            0.398,
+            0.51
+          ],
+          [
+            0.556,
+            0.676
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            1.8170771709956823,
+            0.1448065578089963
+          ],
+          [
+            -1.1558377575498222,
+            -0.5247705189931049
+          ],
+          [
+            2.7780684393420296,
+            -1.5262936400940956
+          ],
+          [
+            -3.6781674973105596,
+            1.3617423475210644
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.796,
+      "release_s": 3.874,
+      "contact_speed_z_m_s": -0.04397057310264156,
+      "peak_force_n": 12.18264657337729,
+      "impulse_100ms_n_s": 0.46075556153408187,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012742562584909975,
+      "rms_carry_error_m": 0.007629933692362985,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0013250982394245787,
+      "final_tilt_deg": 0.0,
+      "elapsed_s": 4.666,
+      "footprint_margin_mm": 5.689837119363175,
+      "full_support": true,
+      "force_origin_s": 3.158,
+      "force_start_s": 3.194,
+      "force_end_s": 3.834,
+      "force_peak_n": 3.922149711485272,
+      "force_at_touch_n": 3.922149711485272,
+      "force_impulse_n_s": 1.0338899641789745,
+      "actual_spans": 4
+    },
+    {
+      "profile": "constant_2n",
+      "height_mm": 20,
+      "context": 7,
+      "scenario": {
+        "mass": 0.22753447503718405,
+        "friction": 0.456364542888835,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": 157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.0
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.152,
+      "release_s": 3.232,
+      "contact_speed_z_m_s": -0.02967735763890403,
+      "peak_force_n": 9.445770565641217,
+      "impulse_100ms_n_s": 0.34288958419905957,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012742562584909975,
+      "rms_carry_error_m": 0.007629933692362985,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0019619236031121583,
+      "final_tilt_deg": 1.7075472925031877e-06,
+      "elapsed_s": 4.022,
+      "footprint_margin_mm": 5.039880432886154,
+      "full_support": true,
+      "force_origin_s": 2.798,
+      "force_start_s": 2.798,
+      "force_end_s": 3.232,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.868,
+      "actual_spans": 1
+    },
+    {
+      "profile": "ramp_hold_2n",
+      "height_mm": 20,
+      "context": 7,
+      "scenario": {
+        "mass": 0.22753447503718405,
+        "friction": 0.456364542888835,
+        "height": 0.02,
+        "pulse": 2.0,
+        "angle_deg": 157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.0,
+            0.72
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [],
+        "force_ramp_s": 0.12
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.148,
+      "release_s": 3.228,
+      "contact_speed_z_m_s": -0.030208173256196458,
+      "peak_force_n": 9.3330788417197,
+      "impulse_100ms_n_s": 0.33748870139309217,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012742562584909975,
+      "rms_carry_error_m": 0.007629933692362985,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0018757734478963635,
+      "final_tilt_deg": 2.9575586669421963e-06,
+      "elapsed_s": 4.02,
+      "footprint_margin_mm": 5.102518997789772,
+      "full_support": true,
+      "force_origin_s": 2.798,
+      "force_start_s": 2.8,
+      "force_end_s": 3.228,
+      "force_peak_n": 2.0,
+      "force_at_touch_n": 2.0,
+      "force_impulse_n_s": 0.738,
+      "actual_spans": 1
+    },
+    {
+      "profile": "random_pulses",
+      "height_mm": 20,
+      "context": 7,
+      "scenario": {
+        "mass": 0.22753447503718405,
+        "friction": 0.456364542888835,
+        "height": 0.02,
+        "pulse": 0.0,
+        "angle_deg": 157.5,
+        "onset": 0.88,
+        "duration": 0.08,
+        "force_intervals": [
+          [
+            0.034,
+            0.14
+          ],
+          [
+            0.198,
+            0.274
+          ],
+          [
+            0.398,
+            0.51
+          ],
+          [
+            0.556,
+            0.676
+          ]
+        ],
+        "approach_force_gap_m": 0.02,
+        "force_vectors_xy_n": [
+          [
+            1.8170771709956823,
+            0.1448065578089963
+          ],
+          [
+            -1.1558377575498222,
+            -0.5247705189931049
+          ],
+          [
+            2.7780684393420296,
+            -1.5262936400940956
+          ],
+          [
+            -3.6781674973105596,
+            1.3617423475210644
+          ]
+        ],
+        "force_ramp_s": 0.014
+      },
+      "status": "settled",
+      "is_success": true,
+      "first_touch_s": 3.15,
+      "release_s": 3.23,
+      "contact_speed_z_m_s": -0.03149944754120436,
+      "peak_force_n": 11.181339000684357,
+      "impulse_100ms_n_s": 0.3734776190129224,
+      "contact_window_complete": true,
+      "max_carry_error_m": 0.012742562584909975,
+      "rms_carry_error_m": 0.007629933692362985,
+      "pulse_window_error_m": 0.0,
+      "final_xy_error_m": 0.0036043016746387176,
+      "final_tilt_deg": 1.7075472925031877e-06,
+      "elapsed_s": 4.022,
+      "footprint_margin_mm": 3.3430632726790948,
+      "full_support": true,
+      "force_origin_s": 2.798,
+      "force_start_s": 2.834,
+      "force_end_s": 3.23,
+      "force_peak_n": 3.1697376120839946,
+      "force_at_touch_n": 0.0,
+      "force_impulse_n_s": 0.34736966275007247,
+      "actual_spans": 3
+    }
+  ]
+}

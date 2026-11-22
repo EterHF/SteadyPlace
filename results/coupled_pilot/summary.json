@@ -1,0 +1,93 @@
+{
+  "fixed_360_300/middle": {
+    "n": 60,
+    "outcome": {
+      "settled": 18,
+      "timeout": 28,
+      "impact_limit": 14
+    },
+    "touched": 60,
+    "completed": 32,
+    "mean_peak_n": 11.379346090679606,
+    "peak_p90_n": 16.404863134709714,
+    "median_completed_s": 6.193,
+    "median_touch_speed_mm_s": 22.678108172999103,
+    "overlapped_touch": 11,
+    "impact_exceeded": 35,
+    "early_contact": 25,
+    "early_open": 0
+  },
+  "phase_rule/middle": {
+    "n": 60,
+    "outcome": {
+      "impact_limit": 13,
+      "timeout": 31,
+      "settled": 16
+    },
+    "touched": 59,
+    "completed": 29,
+    "mean_peak_n": 11.822924395115269,
+    "peak_p90_n": 17.363736161202333,
+    "median_completed_s": 6.002,
+    "median_touch_speed_mm_s": 22.766216309962118,
+    "overlapped_touch": 12,
+    "impact_exceeded": 36,
+    "early_contact": 26,
+    "early_open": 0
+  },
+  "fixed_520_300/slow": {
+    "n": 60,
+    "outcome": {
+      "timeout": 25,
+      "settled": 17,
+      "impact_limit": 18
+    },
+    "touched": 50,
+    "completed": 35,
+    "mean_peak_n": 11.167903772519312,
+    "peak_p90_n": 20.67705047649338,
+    "median_completed_s": 6.046,
+    "median_touch_speed_mm_s": 17.489378008546748,
+    "overlapped_touch": 7,
+    "impact_exceeded": 21,
+    "early_contact": 25,
+    "early_open": 0
+  },
+  "fixed_520_300/middle": {
+    "n": 60,
+    "outcome": {
+      "settled": 23,
+      "timeout": 16,
+      "impact_limit": 20,
+      "overhang": 1
+    },
+    "touched": 60,
+    "completed": 44,
+    "mean_peak_n": 11.236357493291099,
+    "peak_p90_n": 16.218612087542603,
+    "median_completed_s": 6.085,
+    "median_touch_speed_mm_s": 22.68251551895552,
+    "overlapped_touch": 11,
+    "impact_exceeded": 29,
+    "early_contact": 25,
+    "early_open": 0
+  },
+  "fixed_520_300/fast": {
+    "n": 60,
+    "outcome": {
+      "impact_limit": 54,
+      "timeout": 4,
+      "settled": 2
+    },
+    "touched": 60,
+    "completed": 56,
+    "mean_peak_n": 20.667878954139496,
+    "peak_p90_n": 25.59766442849406,
+    "median_completed_s": 5.348,
+    "median_touch_speed_mm_s": 49.95802291376155,
+    "overlapped_touch": 22,
+    "impact_exceeded": 58,
+    "early_contact": 12,
+    "early_open": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "device": "cuda:0",
+  "policy_steps": 64,
+  "updates": 48,
+  "actor_loss": -2.3596813678741455,
+  "critic_loss": 0.12287848442792892,
+  "argv": [
+    "python",
+    "-s",
+    "-m",
+    "sim.train"
+  ]
+}

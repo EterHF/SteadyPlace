@@ -1,0 +1,421 @@
+{
+  "selected": {
+    "name": "constant_01",
+    "baseline": "phase",
+    "action": [
+      0.0,
+      0.0,
+      -0.8490566037735849,
+      -0.3846153846153847,
+      0.0
+    ],
+    "near_speed_mm_s": 16,
+    "brake_mm": 60,
+    "gain_residuals": [
+      0.0,
+      0.0
+    ]
+  },
+  "fixed": {
+    "n": 30,
+    "outcome": {
+      "timeout": 7,
+      "impact_limit": 17,
+      "settled": 5,
+      "overhang": 1
+    },
+    "touched": 30,
+    "completed": 23,
+    "mean_peak_n": 12.928443310400665,
+    "peak_p90_n": 20.997082174266072,
+    "median_completed_s": 6.0,
+    "median_touch_speed_mm_s": 22.643062136590533,
+    "overlapped_touch": 6,
+    "impact_exceeded": 24,
+    "early_contact": 8,
+    "early_open": 0,
+    "successful": 5,
+    "median_success_s": 5.06,
+    "mean_carry_rms_mm": 8.092608394244513
+  },
+  "grid": {
+    "constant_01": {
+      "n": 30,
+      "outcome": {
+        "timeout": 11,
+        "settled": 11,
+        "impact_limit": 8
+      },
+      "touched": 30,
+      "completed": 19,
+      "mean_peak_n": 14.87605944110928,
+      "peak_p90_n": 28.77517490587474,
+      "median_completed_s": 5.698,
+      "median_touch_speed_mm_s": 17.145754245812494,
+      "overlapped_touch": 10,
+      "impact_exceeded": 14,
+      "early_contact": 7,
+      "early_open": 0,
+      "successful": 11,
+      "median_success_s": 5.8,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_02": {
+      "n": 30,
+      "outcome": {
+        "timeout": 9,
+        "impact_limit": 12,
+        "settled": 9
+      },
+      "touched": 30,
+      "completed": 21,
+      "mean_peak_n": 14.35010856720107,
+      "peak_p90_n": 26.43231562607345,
+      "median_completed_s": 5.942,
+      "median_touch_speed_mm_s": 17.232493157034394,
+      "overlapped_touch": 10,
+      "impact_exceeded": 16,
+      "early_contact": 7,
+      "early_open": 0,
+      "successful": 9,
+      "median_success_s": 5.942,
+      "mean_carry_rms_mm": 7.126134361855566
+    },
+    "constant_03": {
+      "n": 30,
+      "outcome": {
+        "timeout": 18,
+        "impact_limit": 5,
+        "settled": 7
+      },
+      "touched": 25,
+      "completed": 12,
+      "mean_peak_n": 11.648778412505296,
+      "peak_p90_n": 15.008432320696308,
+      "median_completed_s": 6.235,
+      "median_touch_speed_mm_s": 16.55990398606576,
+      "overlapped_touch": 5,
+      "impact_exceeded": 13,
+      "early_contact": 8,
+      "early_open": 0,
+      "successful": 7,
+      "median_success_s": 5.584,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_04": {
+      "n": 30,
+      "outcome": {
+        "timeout": 15,
+        "settled": 8,
+        "impact_limit": 7
+      },
+      "touched": 25,
+      "completed": 15,
+      "mean_peak_n": 10.581831293846768,
+      "peak_p90_n": 14.793403659579015,
+      "median_completed_s": 6.216,
+      "median_touch_speed_mm_s": 16.58453520435753,
+      "overlapped_touch": 5,
+      "impact_exceeded": 11,
+      "early_contact": 8,
+      "early_open": 0,
+      "successful": 8,
+      "median_success_s": 5.746,
+      "mean_carry_rms_mm": 7.126134361855566
+    },
+    "constant_05": {
+      "n": 30,
+      "outcome": {
+        "timeout": 23,
+        "settled": 6,
+        "impact_limit": 1
+      },
+      "touched": 15,
+      "completed": 7,
+      "mean_peak_n": 8.692548555477455,
+      "peak_p90_n": 13.636267103056323,
+      "median_completed_s": 6.84,
+      "median_touch_speed_mm_s": 16.56341330604859,
+      "overlapped_touch": 1,
+      "impact_exceeded": 3,
+      "early_contact": 4,
+      "early_open": 0,
+      "successful": 6,
+      "median_success_s": 6.8580000000000005,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_06": {
+      "n": 30,
+      "outcome": {
+        "timeout": 20,
+        "settled": 8,
+        "impact_limit": 2
+      },
+      "touched": 15,
+      "completed": 10,
+      "mean_peak_n": 8.07506957583083,
+      "peak_p90_n": 10.989165746428919,
+      "median_completed_s": 6.784000000000001,
+      "median_touch_speed_mm_s": 16.52745326151838,
+      "overlapped_touch": 1,
+      "impact_exceeded": 2,
+      "early_contact": 4,
+      "early_open": 0,
+      "successful": 8,
+      "median_success_s": 6.793,
+      "mean_carry_rms_mm": 7.126134361855566
+    },
+    "constant_07": {
+      "n": 30,
+      "outcome": {
+        "impact_limit": 18,
+        "settled": 3,
+        "timeout": 9
+      },
+      "touched": 30,
+      "completed": 21,
+      "mean_peak_n": 17.00779088631852,
+      "peak_p90_n": 29.245841843505726,
+      "median_completed_s": 5.584,
+      "median_touch_speed_mm_s": 28.855000047143182,
+      "overlapped_touch": 12,
+      "impact_exceeded": 27,
+      "early_contact": 7,
+      "early_open": 0,
+      "successful": 3,
+      "median_success_s": 5.15,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_08": {
+      "n": 30,
+      "outcome": {
+        "impact_limit": 21,
+        "settled": 4,
+        "timeout": 5
+      },
+      "touched": 30,
+      "completed": 25,
+      "mean_peak_n": 16.364459125942275,
+      "peak_p90_n": 27.634286949738023,
+      "median_completed_s": 5.544,
+      "median_touch_speed_mm_s": 27.805032682643944,
+      "overlapped_touch": 11,
+      "impact_exceeded": 26,
+      "early_contact": 7,
+      "early_open": 0,
+      "successful": 4,
+      "median_success_s": 5.089,
+      "mean_carry_rms_mm": 7.126134361855566
+    },
+    "constant_09": {
+      "n": 30,
+      "outcome": {
+        "timeout": 12,
+        "settled": 7,
+        "impact_limit": 11
+      },
+      "touched": 30,
+      "completed": 18,
+      "mean_peak_n": 13.719313775535376,
+      "peak_p90_n": 23.96522506250162,
+      "median_completed_s": 6.119,
+      "median_touch_speed_mm_s": 22.595335930186526,
+      "overlapped_touch": 8,
+      "impact_exceeded": 22,
+      "early_contact": 8,
+      "early_open": 0,
+      "successful": 7,
+      "median_success_s": 6.014,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_10": {
+      "n": 30,
+      "outcome": {
+        "timeout": 9,
+        "impact_limit": 15,
+        "settled": 6
+      },
+      "touched": 30,
+      "completed": 21,
+      "mean_peak_n": 12.613408460851689,
+      "peak_p90_n": 18.717980854834355,
+      "median_completed_s": 6.188,
+      "median_touch_speed_mm_s": 22.49537406058344,
+      "overlapped_touch": 6,
+      "impact_exceeded": 23,
+      "early_contact": 8,
+      "early_open": 0,
+      "successful": 6,
+      "median_success_s": 5.228,
+      "mean_carry_rms_mm": 7.126134361855566
+    },
+    "constant_11": {
+      "n": 30,
+      "outcome": {
+        "timeout": 17,
+        "impact_limit": 7,
+        "settled": 6
+      },
+      "touched": 27,
+      "completed": 13,
+      "mean_peak_n": 12.093790147491287,
+      "peak_p90_n": 16.462248658736414,
+      "median_completed_s": 6.564,
+      "median_touch_speed_mm_s": 22.532668940233982,
+      "overlapped_touch": 3,
+      "impact_exceeded": 20,
+      "early_contact": 4,
+      "early_open": 0,
+      "successful": 6,
+      "median_success_s": 6.319,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_12": {
+      "n": 30,
+      "outcome": {
+        "timeout": 13,
+        "impact_limit": 11,
+        "settled": 6
+      },
+      "touched": 26,
+      "completed": 17,
+      "mean_peak_n": 11.07169730718753,
+      "peak_p90_n": 14.397055419246819,
+      "median_completed_s": 6.21,
+      "median_touch_speed_mm_s": 22.465538868167915,
+      "overlapped_touch": 3,
+      "impact_exceeded": 19,
+      "early_contact": 4,
+      "early_open": 0,
+      "successful": 6,
+      "median_success_s": 6.087,
+      "mean_carry_rms_mm": 7.126134361855566
+    },
+    "constant_13": {
+      "n": 30,
+      "outcome": {
+        "impact_limit": 18,
+        "timeout": 11,
+        "settled": 1
+      },
+      "touched": 30,
+      "completed": 19,
+      "mean_peak_n": 19.83141004000073,
+      "peak_p90_n": 30.94698148536125,
+      "median_completed_s": 5.126,
+      "median_touch_speed_mm_s": 38.7784699628907,
+      "overlapped_touch": 13,
+      "impact_exceeded": 29,
+      "early_contact": 7,
+      "early_open": 0,
+      "successful": 1,
+      "median_success_s": 4.348,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_14": {
+      "n": 30,
+      "outcome": {
+        "impact_limit": 22,
+        "timeout": 6,
+        "settled": 2
+      },
+      "touched": 30,
+      "completed": 24,
+      "mean_peak_n": 18.082969408473442,
+      "peak_p90_n": 29.890981507199704,
+      "median_completed_s": 5.317,
+      "median_touch_speed_mm_s": 32.46731278837363,
+      "overlapped_touch": 12,
+      "impact_exceeded": 27,
+      "early_contact": 7,
+      "early_open": 0,
+      "successful": 2,
+      "median_success_s": 4.808,
+      "mean_carry_rms_mm": 7.126134361855566
+    },
+    "constant_15": {
+      "n": 30,
+      "outcome": {
+        "impact_limit": 19,
+        "settled": 2,
+        "timeout": 9
+      },
+      "touched": 30,
+      "completed": 21,
+      "mean_peak_n": 13.522409683891862,
+      "peak_p90_n": 16.32539779778855,
+      "median_completed_s": 6.112,
+      "median_touch_speed_mm_s": 28.434607289275903,
+      "overlapped_touch": 12,
+      "impact_exceeded": 28,
+      "early_contact": 8,
+      "early_open": 0,
+      "successful": 2,
+      "median_success_s": 5.611000000000001,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_16": {
+      "n": 30,
+      "outcome": {
+        "impact_limit": 22,
+        "timeout": 5,
+        "settled": 3
+      },
+      "touched": 30,
+      "completed": 25,
+      "mean_peak_n": 13.301322683890275,
+      "peak_p90_n": 15.77269657280986,
+      "median_completed_s": 6.078,
+      "median_touch_speed_mm_s": 28.511933369529107,
+      "overlapped_touch": 12,
+      "impact_exceeded": 27,
+      "early_contact": 8,
+      "early_open": 0,
+      "successful": 3,
+      "median_success_s": 4.388,
+      "mean_carry_rms_mm": 7.126134361855566
+    },
+    "constant_17": {
+      "n": 30,
+      "outcome": {
+        "timeout": 12,
+        "impact_limit": 14,
+        "settled": 4
+      },
+      "touched": 30,
+      "completed": 18,
+      "mean_peak_n": 13.368914233195225,
+      "peak_p90_n": 17.778874648925036,
+      "median_completed_s": 6.4079999999999995,
+      "median_touch_speed_mm_s": 28.2242485626947,
+      "overlapped_touch": 4,
+      "impact_exceeded": 25,
+      "early_contact": 4,
+      "early_open": 0,
+      "successful": 4,
+      "median_success_s": 5.982,
+      "mean_carry_rms_mm": 9.384762509883025
+    },
+    "constant_18": {
+      "n": 30,
+      "outcome": {
+        "timeout": 8,
+        "impact_limit": 18,
+        "settled": 4
+      },
+      "touched": 30,
+      "completed": 22,
+      "mean_peak_n": 13.356536288364417,
+      "peak_p90_n": 16.28937354534958,
+      "median_completed_s": 6.303,
+      "median_touch_speed_mm_s": 28.21743191563623,
+      "overlapped_touch": 5,
+      "impact_exceeded": 25,
+      "early_contact": 4,
+      "early_open": 0,
+      "successful": 4,
+      "median_success_s": 5.7780000000000005,
+      "mean_carry_rms_mm": 7.126134361855566
+    }
+  }
+}

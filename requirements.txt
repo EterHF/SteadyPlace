@@ -1,0 +1,4 @@
+mujoco==3.3.7
+gymnasium==1.2.2
+numpy==2.2.6
+Pillow==11.3.0

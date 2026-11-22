@@ -1,0 +1,604 @@
+{
+  "methods": {
+    "sac": {
+      "overall": {
+        "n": 90,
+        "outcome": {
+          "timeout": 67,
+          "impact_limit": 9,
+          "settled": 14
+        },
+        "touched": 51,
+        "completed": 23,
+        "mean_peak_n": 11.4055045007185,
+        "peak_p90_n": 21.646015223168014,
+        "median_completed_s": 6.73,
+        "median_touch_speed_mm_s": 16.31058093922119,
+        "overlapped_touch": 9,
+        "impact_exceeded": 20,
+        "early_contact": 21,
+        "early_open": 0,
+        "successful": 14,
+        "median_success_s": 6.813000000000001,
+        "mean_carry_rms_mm": 6.7536140696894655
+      },
+      "profiles": {
+        "quiet": {
+          "n": 30,
+          "outcome": {
+            "timeout": 21,
+            "settled": 9
+          },
+          "touched": 15,
+          "completed": 9,
+          "mean_peak_n": 6.811080382557193,
+          "peak_p90_n": 8.416689839559139,
+          "median_completed_s": 6.73,
+          "median_touch_speed_mm_s": 13.247011149453414,
+          "overlapped_touch": 0,
+          "impact_exceeded": 0,
+          "early_contact": 0,
+          "early_open": 0,
+          "successful": 9,
+          "median_success_s": 6.73,
+          "mean_carry_rms_mm": 6.205804152548467
+        },
+        "sustained": {
+          "n": 30,
+          "outcome": {
+            "timeout": 24,
+            "impact_limit": 4,
+            "settled": 2
+          },
+          "touched": 20,
+          "completed": 6,
+          "mean_peak_n": 13.199017071876753,
+          "peak_p90_n": 23.433234633395433,
+          "median_completed_s": 6.819,
+          "median_touch_speed_mm_s": 22.367735043555527,
+          "overlapped_touch": 7,
+          "impact_exceeded": 10,
+          "early_contact": 3,
+          "early_open": 0,
+          "successful": 2,
+          "median_success_s": 6.819,
+          "mean_carry_rms_mm": 7.556527471764211
+        },
+        "random_pulses": {
+          "n": 30,
+          "outcome": {
+            "timeout": 22,
+            "impact_limit": 5,
+            "settled": 3
+          },
+          "touched": 16,
+          "completed": 8,
+          "mean_peak_n": 13.470886397546908,
+          "peak_p90_n": 22.04916478151898,
+          "median_completed_s": 6.599,
+          "median_touch_speed_mm_s": 34.00899826317042,
+          "overlapped_touch": 2,
+          "impact_exceeded": 10,
+          "early_contact": 18,
+          "early_open": 0,
+          "successful": 3,
+          "median_success_s": 6.95,
+          "mean_carry_rms_mm": 6.4985105847557225
+        }
+      },
+      "height_bands": {
+        "0": {
+          "n": 18,
+          "outcome": {
+            "timeout": 16,
+            "impact_limit": 2
+          },
+          "touched": 3,
+          "completed": 2,
+          "mean_peak_n": 12.78854803824263,
+          "peak_p90_n": 18.481316321512445,
+          "median_completed_s": 5.99,
+          "median_touch_speed_mm_s": 26.56438941931849,
+          "overlapped_touch": 1,
+          "impact_exceeded": 2,
+          "early_contact": 4,
+          "early_open": 0,
+          "successful": 0,
+          "median_success_s": null,
+          "mean_carry_rms_mm": 6.90537529036515
+        },
+        "1": {
+          "n": 18,
+          "outcome": {
+            "timeout": 18
+          },
+          "touched": 7,
+          "completed": 0,
+          "mean_peak_n": 12.679149056481874,
+          "peak_p90_n": 18.68617254972137,
+          "median_completed_s": null,
+          "median_touch_speed_mm_s": 26.4577042955258,
+          "overlapped_touch": 2,
+          "impact_exceeded": 5,
+          "early_contact": 5,
+          "early_open": 0,
+          "successful": 0,
+          "median_success_s": null,
+          "mean_carry_rms_mm": 6.436909434019311
+        },
+        "2": {
+          "n": 18,
+          "outcome": {
+            "timeout": 17,
+            "impact_limit": 1
+          },
+          "touched": 8,
+          "completed": 1,
+          "mean_peak_n": 13.076319614432244,
+          "peak_p90_n": 24.667337561874145,
+          "median_completed_s": 6.476,
+          "median_touch_speed_mm_s": 19.34087075958547,
+          "overlapped_touch": 2,
+          "impact_exceeded": 3,
+          "early_contact": 5,
+          "early_open": 0,
+          "successful": 0,
+          "median_success_s": null,
+          "mean_carry_rms_mm": 6.5994537591904985
+        },
+        "3": {
+          "n": 18,
+          "outcome": {
+            "settled": 6,
+            "impact_limit": 3,
+            "timeout": 9
+          },
+          "touched": 15,
+          "completed": 9,
+          "mean_peak_n": 11.293689959970347,
+          "peak_p90_n": 21.448193463755718,
+          "median_completed_s": 6.79,
+          "median_touch_speed_mm_s": 13.525545982341496,
+          "overlapped_touch": 1,
+          "impact_exceeded": 5,
+          "early_contact": 5,
+          "early_open": 0,
+          "successful": 6,
+          "median_success_s": 6.813000000000001,
+          "mean_carry_rms_mm": 7.2263629447817666
+        },
+        "4": {
+          "n": 18,
+          "outcome": {
+            "settled": 8,
+            "impact_limit": 3,
+            "timeout": 7
+          },
+          "touched": 18,
+          "completed": 11,
+          "mean_peak_n": 10.03028531730718,
+          "peak_p90_n": 19.758671904046555,
+          "median_completed_s": 6.848,
+          "median_touch_speed_mm_s": 12.969233176247728,
+          "overlapped_touch": 3,
+          "impact_exceeded": 5,
+          "early_contact": 2,
+          "early_open": 0,
+          "successful": 8,
+          "median_success_s": 6.747,
+          "mean_carry_rms_mm": 6.5999689200906015
+        }
+      }
+    },
+    "fixed_520_300": {
+      "overall": {
+        "n": 90,
+        "outcome": {
+          "timeout": 20,
+          "impact_limit": 36,
+          "settled": 30,
+          "overhang": 4
+        },
+        "touched": 90,
+        "completed": 70,
+        "mean_peak_n": 11.07639465571769,
+        "peak_p90_n": 14.742662698594351,
+        "median_completed_s": 6.245,
+        "median_touch_speed_mm_s": 22.634362528074327,
+        "overlapped_touch": 18,
+        "impact_exceeded": 50,
+        "early_contact": 36,
+        "early_open": 0,
+        "successful": 30,
+        "median_success_s": 6.26,
+        "mean_carry_rms_mm": 8.119668421707589
+      },
+      "profiles": {
+        "quiet": {
+          "n": 30,
+          "outcome": {
+            "timeout": 5,
+            "impact_limit": 10,
+            "settled": 15
+          },
+          "touched": 30,
+          "completed": 25,
+          "mean_peak_n": 10.056258935715213,
+          "peak_p90_n": 11.580212757356055,
+          "median_completed_s": 5.882,
+          "median_touch_speed_mm_s": 22.38236350577902,
+          "overlapped_touch": 0,
+          "impact_exceeded": 14,
+          "early_contact": 1,
+          "early_open": 0,
+          "successful": 15,
+          "median_success_s": 5.446,
+          "mean_carry_rms_mm": 7.535910042623721
+        },
+        "sustained": {
+          "n": 30,
+          "outcome": {
+            "timeout": 9,
+            "impact_limit": 10,
+            "settled": 7,
+            "overhang": 4
+          },
+          "touched": 30,
+          "completed": 21,
+          "mean_peak_n": 10.42779982498928,
+          "peak_p90_n": 13.92930793134181,
+          "median_completed_s": 6.402,
+          "median_touch_speed_mm_s": 22.728509659638576,
+          "overlapped_touch": 14,
+          "impact_exceeded": 17,
+          "early_contact": 14,
+          "early_open": 0,
+          "successful": 7,
+          "median_success_s": 6.402,
+          "mean_carry_rms_mm": 8.945751565679396
+        },
+        "random_pulses": {
+          "n": 30,
+          "outcome": {
+            "timeout": 6,
+            "settled": 8,
+            "impact_limit": 16
+          },
+          "touched": 30,
+          "completed": 24,
+          "mean_peak_n": 12.745125206448579,
+          "peak_p90_n": 20.53752606735215,
+          "median_completed_s": 5.992,
+          "median_touch_speed_mm_s": 23.17292495185701,
+          "overlapped_touch": 4,
+          "impact_exceeded": 19,
+          "early_contact": 21,
+          "early_open": 0,
+          "successful": 8,
+          "median_success_s": 6.422000000000001,
+          "mean_carry_rms_mm": 7.877343656819644
+        }
+      },
+      "height_bands": {
+        "0": {
+          "n": 18,
+          "outcome": {
+            "timeout": 15,
+            "impact_limit": 2,
+            "settled": 1
+          },
+          "touched": 18,
+          "completed": 3,
+          "mean_peak_n": 10.57797647264538,
+          "peak_p90_n": 11.795072693123863,
+          "median_completed_s": 7.136,
+          "median_touch_speed_mm_s": 22.356288685277185,
+          "overlapped_touch": 0,
+          "impact_exceeded": 13,
+          "early_contact": 6,
+          "early_open": 0,
+          "successful": 1,
+          "median_success_s": 6.962,
+          "mean_carry_rms_mm": 8.268707000234727
+        },
+        "1": {
+          "n": 18,
+          "outcome": {
+            "settled": 7,
+            "timeout": 3,
+            "impact_limit": 8
+          },
+          "touched": 18,
+          "completed": 15,
+          "mean_peak_n": 11.171128712495268,
+          "peak_p90_n": 15.043672700707273,
+          "median_completed_s": 6.798,
+          "median_touch_speed_mm_s": 22.849260479284144,
+          "overlapped_touch": 0,
+          "impact_exceeded": 9,
+          "early_contact": 8,
+          "early_open": 0,
+          "successful": 7,
+          "median_success_s": 6.94,
+          "mean_carry_rms_mm": 8.133170408873143
+        },
+        "2": {
+          "n": 18,
+          "outcome": {
+            "impact_limit": 6,
+            "settled": 11,
+            "overhang": 1
+          },
+          "touched": 18,
+          "completed": 18,
+          "mean_peak_n": 9.126644575870777,
+          "peak_p90_n": 11.564673586413281,
+          "median_completed_s": 6.286,
+          "median_touch_speed_mm_s": 22.240924400028437,
+          "overlapped_touch": 4,
+          "impact_exceeded": 6,
+          "early_contact": 8,
+          "early_open": 0,
+          "successful": 11,
+          "median_success_s": 6.28,
+          "mean_carry_rms_mm": 8.057781192841087
+        },
+        "3": {
+          "n": 18,
+          "outcome": {
+            "settled": 6,
+            "impact_limit": 10,
+            "timeout": 2
+          },
+          "touched": 18,
+          "completed": 16,
+          "mean_peak_n": 12.717692155456946,
+          "peak_p90_n": 20.67403592113899,
+          "median_completed_s": 5.425,
+          "median_touch_speed_mm_s": 23.663621481768878,
+          "overlapped_touch": 7,
+          "impact_exceeded": 12,
+          "early_contact": 7,
+          "early_open": 0,
+          "successful": 6,
+          "median_success_s": 5.478,
+          "mean_carry_rms_mm": 8.22983359650465
+        },
+        "4": {
+          "n": 18,
+          "outcome": {
+            "settled": 5,
+            "overhang": 3,
+            "impact_limit": 10
+          },
+          "touched": 18,
+          "completed": 18,
+          "mean_peak_n": 11.788531362120088,
+          "peak_p90_n": 14.901262827713552,
+          "median_completed_s": 5.041,
+          "median_touch_speed_mm_s": 22.852031720837488,
+          "overlapped_touch": 7,
+          "impact_exceeded": 10,
+          "early_contact": 7,
+          "early_open": 0,
+          "successful": 5,
+          "median_success_s": 4.774,
+          "mean_carry_rms_mm": 7.908849910084335
+        }
+      }
+    },
+    "constant_01": {
+      "overall": {
+        "n": 90,
+        "outcome": {
+          "timeout": 46,
+          "settled": 21,
+          "impact_limit": 23
+        },
+        "touched": 90,
+        "completed": 44,
+        "mean_peak_n": 16.276771021152133,
+        "peak_p90_n": 29.278063319277297,
+        "median_completed_s": 5.813000000000001,
+        "median_touch_speed_mm_s": 29.12077046250728,
+        "overlapped_touch": 24,
+        "impact_exceeded": 52,
+        "early_contact": 28,
+        "early_open": 0,
+        "successful": 21,
+        "median_success_s": 6.132,
+        "mean_carry_rms_mm": 9.426526790556586
+      },
+      "profiles": {
+        "quiet": {
+          "n": 30,
+          "outcome": {
+            "timeout": 5,
+            "settled": 16,
+            "impact_limit": 9
+          },
+          "touched": 30,
+          "completed": 25,
+          "mean_peak_n": 11.819885991748945,
+          "peak_p90_n": 25.065779051749512,
+          "median_completed_s": 5.376,
+          "median_touch_speed_mm_s": 16.661006743999227,
+          "overlapped_touch": 0,
+          "impact_exceeded": 9,
+          "early_contact": 1,
+          "early_open": 0,
+          "successful": 16,
+          "median_success_s": 5.813000000000001,
+          "mean_carry_rms_mm": 8.785709660482405
+        },
+        "sustained": {
+          "n": 30,
+          "outcome": {
+            "timeout": 23,
+            "settled": 4,
+            "impact_limit": 3
+          },
+          "touched": 30,
+          "completed": 7,
+          "mean_peak_n": 17.606361071102658,
+          "peak_p90_n": 28.977918910986602,
+          "median_completed_s": 6.374,
+          "median_touch_speed_mm_s": 31.30975997364263,
+          "overlapped_touch": 20,
+          "impact_exceeded": 20,
+          "early_contact": 11,
+          "early_open": 0,
+          "successful": 4,
+          "median_success_s": 7.010999999999999,
+          "mean_carry_rms_mm": 10.336764486385995
+        },
+        "random_pulses": {
+          "n": 30,
+          "outcome": {
+            "timeout": 18,
+            "impact_limit": 11,
+            "settled": 1
+          },
+          "touched": 30,
+          "completed": 12,
+          "mean_peak_n": 19.40406600060479,
+          "peak_p90_n": 30.846720209310103,
+          "median_completed_s": 5.932,
+          "median_touch_speed_mm_s": 52.9714958991722,
+          "overlapped_touch": 4,
+          "impact_exceeded": 23,
+          "early_contact": 16,
+          "early_open": 0,
+          "successful": 1,
+          "median_success_s": 4.606,
+          "mean_carry_rms_mm": 9.157106224801352
+        }
+      },
+      "height_bands": {
+        "0": {
+          "n": 18,
+          "outcome": {
+            "timeout": 14,
+            "settled": 3,
+            "impact_limit": 1
+          },
+          "touched": 18,
+          "completed": 4,
+          "mean_peak_n": 10.008733016185214,
+          "peak_p90_n": 14.669655333038321,
+          "median_completed_s": 7.122999999999999,
+          "median_touch_speed_mm_s": 16.32380682556,
+          "overlapped_touch": 0,
+          "impact_exceeded": 2,
+          "early_contact": 6,
+          "early_open": 0,
+          "successful": 3,
+          "median_success_s": 7.154,
+          "mean_carry_rms_mm": 9.61407377640227
+        },
+        "1": {
+          "n": 18,
+          "outcome": {
+            "settled": 7,
+            "timeout": 5,
+            "impact_limit": 6
+          },
+          "touched": 18,
+          "completed": 13,
+          "mean_peak_n": 13.549562830755518,
+          "peak_p90_n": 23.79154359064347,
+          "median_completed_s": 6.63,
+          "median_touch_speed_mm_s": 17.242332479241007,
+          "overlapped_touch": 2,
+          "impact_exceeded": 9,
+          "early_contact": 8,
+          "early_open": 0,
+          "successful": 7,
+          "median_success_s": 6.846,
+          "mean_carry_rms_mm": 9.462417492353197
+        },
+        "2": {
+          "n": 18,
+          "outcome": {
+            "settled": 7,
+            "timeout": 11
+          },
+          "touched": 18,
+          "completed": 7,
+          "mean_peak_n": 13.877570626429165,
+          "peak_p90_n": 20.887199913806842,
+          "median_completed_s": 5.716,
+          "median_touch_speed_mm_s": 18.559631180270117,
+          "overlapped_touch": 6,
+          "impact_exceeded": 10,
+          "early_contact": 8,
+          "early_open": 0,
+          "successful": 7,
+          "median_success_s": 5.716,
+          "mean_carry_rms_mm": 9.357999357393666
+        },
+        "3": {
+          "n": 18,
+          "outcome": {
+            "impact_limit": 6,
+            "timeout": 8,
+            "settled": 4
+          },
+          "touched": 18,
+          "completed": 10,
+          "mean_peak_n": 18.06307151934143,
+          "peak_p90_n": 27.852240227250903,
+          "median_completed_s": 4.366,
+          "median_touch_speed_mm_s": 35.38971885734116,
+          "overlapped_touch": 7,
+          "impact_exceeded": 13,
+          "early_contact": 5,
+          "early_open": 0,
+          "successful": 4,
+          "median_success_s": 4.366,
+          "mean_carry_rms_mm": 9.541702263164593
+        },
+        "4": {
+          "n": 18,
+          "outcome": {
+            "impact_limit": 10,
+            "timeout": 8
+          },
+          "touched": 18,
+          "completed": 10,
+          "mean_peak_n": 25.884917113049344,
+          "peak_p90_n": 33.55219480591707,
+          "median_completed_s": 4.032,
+          "median_touch_speed_mm_s": 74.49408134332492,
+          "overlapped_touch": 9,
+          "impact_exceeded": 18,
+          "early_contact": 1,
+          "early_open": 0,
+          "successful": 0,
+          "median_success_s": null,
+          "mean_carry_rms_mm": 9.156441063469197
+        }
+      }
+    }
+  },
+  "paired": {
+    "fixed_520_300": {
+      "gained_success": 7,
+      "lost_success": 23,
+      "delta_success_pp": -17.77777777777778,
+      "both_touched": 51,
+      "paired_median_peak_delta_n": -1.818148843460083,
+      "both_successful": 7,
+      "paired_median_time_delta_s": 1.3260000000000005
+    },
+    "constant_01": {
+      "gained_success": 11,
+      "lost_success": 18,
+      "delta_success_pp": -7.777777777777778,
+      "both_touched": 51,
+      "paired_median_peak_delta_n": -6.7309548559153,
+      "both_successful": 3,
+      "paired_median_time_delta_s": 2.338
+    }
+  }
+}
