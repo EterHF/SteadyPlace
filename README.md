@@ -1,55 +1,49 @@
 # SteadyPlace
 
-机器人动力学与控制课程项目。在 MuJoCo 中用 Franka Panda 搬运 50 mm 方块，在未知台高（±40 mm）及持续推力或多次随机脉冲下，将物块完整放稳于 64 mm 承托台。任务要求 **7.2 s 内完成**，放置全程的台面竖向力峰值 **≤10 N**。
+机器人动力学与控制课程项目。Franka Panda 从固定料台逐个抓取四个 50 mm 方块，在单轴往复托盘上叠成四层。机械臂撤开后，整塔需在一个完整的托盘周期内保持承托和层序。
 
-广义动量观测器用关节状态和指令力矩估计载荷与接触。上层 SAC 调节水平与法向刚度、近台速度、减速起点和夹爪指令，基线与 SAC 共用承托控制和松爪判据。
+## 任务演示
 
-[选题 PPT](slides/机器人期末项目_选题说明_北大模板精简版.pptx) · [PDF](slides/机器人期末项目_选题说明_北大模板精简版.pdf) · [持续扰动配对演示](results/coupled_pilot/paired_demo.mp4)
+[完整叠塔演示](results/stack_demo/demo.mp4) · [加快托盘后的倾倒演示](results/stack_demo/fast/demo.mp4)
 
-## 复现实验
+两个工况共用脚本式笛卡尔阻抗控制器。末端跟随托盘的位置与速度，按固定时序下降、松爪和撤离。方块质量为 85 g，方块和托盘的滑动摩擦参数分别为 0.46 和 0.48。托盘行程约 21 cm，改变周期会同时改变速度、加速度和放置时的运动相位。
 
-在项目根目录建立环境并运行基线评估。
+| 托盘周期 | 参考加速度峰值 | 撤手后一周期 |
+| --- | ---: | --- |
+| 2.00 s | 1.04 m/s² | 四层稳定，全程无机械臂接触，最大相邻层水平偏移 6.3 mm |
+| 1.30 s | 2.45 m/s² | 四块均完成放置，撤手后整塔倾覆 |
+
+逐层首触后 100 ms 的峰值力与法向冲量、末次撤手用时、层间错位及底块相对托盘的漂移均有记录。撤手后按法向接触力检查四个承托面，要求至少 99% 的仿真步四个承托面同时有效、积木维持层序且全程无机械臂接触。 [默认工况数据](results/stack_demo/summary.json) · [加快工况数据](results/stack_demo/fast/summary.json)
+
+## 复现
+
+首次使用时在项目内配置 Conda 环境。
 
 ```bash
 conda create -y -p "$PWD/.conda/envs/carryplace" -c conda-forge python=3.11 pip
 conda activate "$PWD/.conda/envs/carryplace"
-python -s -m pip install -r requirements.txt
-export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
-python -s -m sim.evaluate_coupled --workers 4 --output runs/coupled
+python -m pip install -r requirements.txt
+python -m sim.demo --output runs/demo
 ```
 
-复跑单种子 30 万步 SAC 及配对评估（Linux，CPU）。
+录制视频需要 PATH 中带 `libx264` 的 FFmpeg。在 Linux 服务器上用 EGL 离屏渲染。
 
 ```bash
-python -s -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cpu
-python -s -m pip install -r requirements-rl.txt
-mkdir -p runs/sac
-cp results/sac_pilot/{config,protocol,split}.json results/sac_pilot/worker.sh runs/sac/
-(
-  export PYTHONPATH="$PWD"
-  cd runs/sac
-  bash worker.sh && python -s -m sim.evaluate_sac
-)
+conda install -y -c conda-forge ffmpeg
+MUJOCO_GL=egl python -m sim.demo --render --output runs/demo
+MUJOCO_GL=egl python -m sim.demo --render --period 1.30 --output runs/demo-fast
 ```
 
-## 已完成结果
-
-基线共测了 300 个主回合。固定刚度下，近台速度从 16 提到 50 mm/s，放置峰值平均增加 **9.25 N**（双方均触桌的 50 对），完成用时中位差为 **−0.55 s**（双方均完成的 33 对）。[基线复测](docs/方案2_跨阶段耦合复测.md)
-
-| 同一批 90 个独立测试工况 | 成功 | 超时 | 峰值均值（N） | 完成用时中位数（s） |
-| --- | ---: | ---: | ---: | ---: |
-| 固定刚度，22 mm/s | 30/90 | 20 | 11.08 | 6.25 |
-| 调参后的常量控制 | 21/90 | 46 | 16.28 | 5.81 |
-| SAC，单种子 30 万步 | 14/90 | 67 | 11.41 | 6.73 |
-
-峰值只计已触桌回合，用时只计完成放置的回合（含冲击超限）。SAC 有 **39/90** 个回合到时限仍未触桌。[测试汇总](results/sac_pilot/test_300000.json) · [逐回合数据](results/sac_pilot/test_300000_runs.json)
+托盘参考周期可设为 0.5 s 及以上。第二条录制命令在倒塔时仍会保存视频和数据，并以状态码 1 退出。
 
 ## TODO
 
-- [ ] 比较固定速度与基于名义间隙、剩余时间的分段调速，测量低台未触桌率和高台放置峰值。
-- [ ] 固定刚度与夹爪，只学习近台速度和减速起点。对照原奖励与加入全程峰值、超时惩罚的奖励。
-- [ ] 用 3 个训练种子和新抽样测试工况复测，按台高及无扰、持续推力、多次随机脉冲分组报告成功率、冲击和用时。
+- [ ] 增加依据当前姿态、托盘运动和接触信号放行的规则基线。
+- [ ] 预测各层的滑移与倾覆风险，联合选择落点和松爪时机。
+- [ ] 在不同起始相位、摩擦和加速度下配对比较成塔率、冲击与用时。
 
 ## 引用
 
-Panda 模型来自 [MuJoCo Menagerie 的固定版本](https://github.com/google-deepmind/mujoco_menagerie/tree/fb36886b3023db08c198264e1e9956ab202c3e3b/franka_emika_panda)，许可见 [Apache-2.0](assets/franka_emika_panda/LICENSE)。算法、仿真器与训练框架的出处见[文献调研](docs/文献调研.md)。
+仿真使用 MuJoCo，Panda 模型取自 MuJoCo Menagerie 的固定版本，采用 Apache-2.0 许可。 [MuJoCo](https://mujoco.org/) · [Panda 模型](https://github.com/google-deepmind/mujoco_menagerie/tree/fb36886b3023db08c198264e1e9956ab202c3e3b/franka_emika_panda) · [许可证](assets/franka_emika_panda/LICENSE)
+
+选题参考运动托盘运输和基于接触预测的控制。 [Keep it Upright](https://arxiv.org/abs/2305.17484) · [Approximating Global Contact-Implicit MPC via Sampling and Local Complementarity](https://arxiv.org/abs/2505.13350)

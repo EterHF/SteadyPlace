@@ -5,8 +5,3 @@
 __pycache__/
 *.py[cod]
 *.log
-/results/integration/cuda.json
-/results/sac_pilot/launch.json
-/results/sac_pilot/train.pid
-/results/sac_pilot/train.exit
-/results/sac_pilot/*.zip

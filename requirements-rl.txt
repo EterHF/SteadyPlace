@@ -1,2 +1,0 @@
-# Install PyTorch separately to select a CPU or CUDA wheel.
-stable-baselines3==2.7.1

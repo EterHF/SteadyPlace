@@ -1,0 +1,61 @@
+{
+  "success": true,
+  "control": "scripted_cartesian_impedance_with_tray_tracking",
+  "reference_period_s": 2.0,
+  "reference_amplitude_m": 0.105,
+  "reference_acceleration_peak_m_s2": 1.0363084621143825,
+  "task_finished_s": 20.919999999999284,
+  "layers": [
+    {
+      "layer": 1,
+      "grasped": true,
+      "lift_height_mm": 147.03046845338278,
+      "first_touch_s": 4.459999999999731,
+      "touch_peak_n_100ms": 2.60804816459586,
+      "touch_impulse_ns_100ms": 0.09964917183953689,
+      "supported_after_retract": true,
+      "placed_s": 5.229999999999646
+    },
+    {
+      "layer": 2,
+      "grasped": true,
+      "lift_height_mm": 151.30890122796205,
+      "first_touch_s": 9.693999999999907,
+      "touch_peak_n_100ms": 3.87656977715761,
+      "touch_impulse_ns_100ms": 0.1038622131959376,
+      "supported_after_retract": true,
+      "placed_s": 10.460000000000163
+    },
+    {
+      "layer": 3,
+      "grasped": true,
+      "lift_height_mm": 207.71080359953106,
+      "first_touch_s": 14.938000000001658,
+      "touch_peak_n_100ms": 8.187735823925394,
+      "touch_impulse_ns_100ms": 0.11502243526564537,
+      "supported_after_retract": true,
+      "placed_s": 15.690000000001909
+    },
+    {
+      "layer": 4,
+      "grasped": true,
+      "lift_height_mm": 257.53066303146113,
+      "first_touch_s": 19.999999999999794,
+      "touch_peak_n_100ms": 2.622413643184566,
+      "touch_impulse_ns_100ms": 0.1240923492756911,
+      "supported_after_retract": true,
+      "placed_s": 20.919999999999284
+    }
+  ],
+  "post_release_cycle": {
+    "duration_s": 1.9999999999988916,
+    "tray_stroke_mm": 210.5195854960667,
+    "tray_acceleration_peak_m_s2": 1.0396285675105017,
+    "max_base_drift_mm": 0.4239539844968874,
+    "max_interlayer_offset_mm": 6.261118639056716,
+    "max_block_tilt_deg": 0.7088101920686795,
+    "fraction_all_layers_supported": 1.0,
+    "arm_contact_steps": 0,
+    "ordered": true
+  }
+}

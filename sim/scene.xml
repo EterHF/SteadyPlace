@@ -1,38 +1,64 @@
-<mujoco model="disturbed-carry-and-place">
-  <option timestep="0.002" integrator="implicitfast" cone="elliptic" iterations="60" />
+<mujoco model="moving-tray-block-stacking">
+  <option timestep="0.002" integrator="implicitfast" cone="elliptic" iterations="80" />
   <visual>
-    <global offwidth="1280" offheight="800" />
-    <headlight ambient="0.48 0.48 0.48" diffuse="0.65 0.65 0.65" specular="0.15 0.15 0.15" />
-    <rgba haze="0.08 0.12 0.16 1" />
+    <global offwidth="1280" offheight="720" />
+    <quality shadowsize="2048" />
+    <headlight ambient="0.36 0.37 0.43" diffuse="0.48 0.48 0.54" specular="0.16 0.16 0.16" />
+    <rgba haze="0.10 0.13 0.17 1" />
   </visual>
   <asset>
-    <texture name="floor_grid" type="2d" builtin="checker" rgb1="0.09 0.14 0.18"
-      rgb2="0.13 0.19 0.24" width="256" height="256" />
-    <material name="floor_mat" texture="floor_grid" texrepeat="6 6" texuniform="true" reflectance="0.08" />
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.15 0.20 0.27"
+      rgb2="0.08 0.11 0.15" width="256" height="128" />
+    <texture name="floor_tiles" type="2d" builtin="checker" rgb1="0.12 0.15 0.19"
+      rgb2="0.14 0.17 0.21" width="128" height="128" />
+    <material name="floor_mat" texture="floor_tiles" texrepeat="5 5" texuniform="true" />
   </asset>
   <worldbody>
-    <light pos="0.2 -0.5 1.8" dir="0.1 0.25 -1" directional="true" diffuse="0.82 0.81 0.78" />
-    <light pos="0.5 1.1 0.9" dir="-0.2 -0.6 -0.7" directional="true" diffuse="0.35 0.46 0.55" />
-    <camera name="overview" pos="1.42 0.72 1.05" xyaxes="-0.58 0.81 0 -0.37 -0.27 0.89" fovy="36" />
-    <geom name="floor" type="plane" pos="0 0 -0.025" size="2 2 0.1" material="floor_mat" />
-    <geom name="pedestal" type="cylinder" pos="0 0 -0.012" size="0.13 0.012" rgba="0.31 0.36 0.40 1"
-      contype="0" conaffinity="0" />
-    <geom name="source_table" type="box" pos="0.52 -0.21 0.055" size="0.19 0.17 0.065"
-      rgba="0.25 0.34 0.42 1" friction="0.75 0.01 0.001" />
-    <body name="target_table_body" pos="0.52 0.21 0.055">
-      <geom name="target_table" type="box" size="0.19 0.17 0.065" rgba="0.19 0.35 0.40 1"
-        friction="0.75 0.01 0.001" solref="0.012 1" solimp="0.92 0.98 0.001" />
-      <site name="target_zone" pos="0 0 0.0656" type="cylinder" size="0.068 0.0004"
-        rgba="0.29 0.83 0.78 0.48" />
+    <light pos="0.15 -0.7 1.75" dir="0.18 0.25 -1" directional="true" diffuse="0.8 0.78 0.72" />
+    <light pos="0.3 0.7 1.15" dir="0 -0.4 -1" directional="true" diffuse="0.3 0.44 0.59"
+      castshadow="false" />
+    <camera name="overview" pos="1.56 -0.99 1.00"
+      xyaxes="0.65 0.76 0 -0.31 0.265 0.913" fovy="38" />
+    <geom name="floor" type="plane" pos="0 0 -0.025" size="4 4 0.1" material="floor_mat" />
+    <geom name="pedestal" type="cylinder" pos="0 0 -0.012" size="0.101 0.013"
+      rgba="0.29 0.34 0.40 1" contype="0" conaffinity="0" />
+    <geom name="source_table" type="box" pos="0.49 -0.256 0.059" size="0.145 0.153 0.061"
+      rgba="0.25 0.32 0.39 1" friction="0.64 0.006 0.001" />
+    <geom type="box" pos="0.52 0.18 0.019" size="0.123 0.224 0.044"
+      rgba="0.16 0.22 0.28 1" contype="0" conaffinity="0" />
+    <geom type="box" pos="0.425 0.18 0.073" size="0.012 0.217 0.012"
+      rgba="0.65 0.73 0.80 1" contype="0" conaffinity="0" />
+    <geom type="box" pos="0.615 0.18 0.073" size="0.012 0.217 0.012"
+      rgba="0.65 0.73 0.80 1" contype="0" conaffinity="0" />
+    <body name="tray" pos="0.52 0.18 0.105">
+      <joint name="tray_slide" type="slide" axis="0 1 0" range="-0.13 0.13" damping="2.0" />
+      <geom name="tray_top" type="box" size="0.111 0.091 0.015" mass="0.8"
+        rgba="0.15 0.47 0.49 1" friction="0.48 0.006 0.001" />
+      <site name="landing_mark" type="box" pos="0 0 0.01515" size="0.036 0.036 0.00012"
+        rgba="0.36 0.78 0.76 0.64" />
     </body>
-    <body name="payload" pos="0.52 -0.21 0.145">
-      <freejoint name="payload_joint" />
-      <geom name="payload_box" type="box" size="0.025 0.025 0.025" mass="0.25" rgba="0.98 0.57 0.22 1"
-        friction="0.9 0.01 0.001" solref="0.012 1" solimp="0.92 0.98 0.001" />
+    <body name="block1" pos="0.55 -0.20 0.145">
+      <freejoint />
+      <geom name="cube1" type="box" size="0.025 0.025 0.025" mass="0.085"
+        rgba="0.96 0.47 0.28 1" friction="0.46 0.005 0.0007" solref="0.008 1" />
+    </body>
+    <body name="block2" pos="0.43 -0.20 0.145">
+      <freejoint />
+      <geom name="cube2" type="box" size="0.025 0.025 0.025" mass="0.085"
+        rgba="0.98 0.72 0.25 1" friction="0.46 0.005 0.0007" solref="0.008 1" />
+    </body>
+    <body name="block3" pos="0.55 -0.32 0.145">
+      <freejoint />
+      <geom name="cube3" type="box" size="0.025 0.025 0.025" mass="0.085"
+        rgba="0.32 0.69 0.96 1" friction="0.46 0.005 0.0007" solref="0.008 1" />
+    </body>
+    <body name="block4" pos="0.43 -0.32 0.145">
+      <freejoint />
+      <geom name="cube4" type="box" size="0.025 0.025 0.025" mass="0.085"
+        rgba="0.73 0.48 0.96 1" friction="0.46 0.005 0.0007" solref="0.008 1" />
     </body>
   </worldbody>
-  <contact>
-    <pair name="landing_contact" geom1="target_table" geom2="payload_box" condim="3"
-      friction="0.65 0.65 0.005 0.0001 0.0001" solref="0.012 1" solimp="0.92 0.98 0.001" />
-  </contact>
+  <actuator>
+    <motor name="tray_drive" joint="tray_slide" ctrlrange="-60 60" />
+  </actuator>
 </mujoco>

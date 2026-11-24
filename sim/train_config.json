@@ -1,9 +1,0 @@
-{
-  "device": "cuda:0",
-  "seed": 11,
-  "steps": 300000,
-  "learning_starts": 5000,
-  "buffer_size": 200000,
-  "force_feedback": true,
-  "save_policy": true
-}
