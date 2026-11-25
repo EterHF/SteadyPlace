@@ -1,5 +1,6 @@
 """Panda and four free blocks on a physically driven slide."""
 
+from dataclasses import dataclass
 from math import ceil
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -19,6 +20,24 @@ OPEN = 255.0
 HOLD = 118.0
 PARK = np.array([0.43, -0.16, 0.37])
 IMPACT_WINDOW = 0.10
+
+
+@dataclass
+class Placement:
+    layer: int
+    landing: np.ndarray
+    above_tray: np.ndarray
+    payload_kg: float
+    grasped: bool
+    lift_height_mm: float
+
+
+def cycle_is_stable(cycle):
+    return (
+        cycle["ordered"]
+        and cycle["arm_contact_steps"] == 0
+        and cycle["fraction_all_layers_supported"] >= 0.99
+    )
 
 
 def build_model():
@@ -50,12 +69,13 @@ def build_model():
 class StackRun:
     """Scripted pick and place using TCP impedance and encoder-based tray tracking."""
 
-    def __init__(self, period, on_step=None):
+    def __init__(self, period, on_step=None, *, tray_phase=0.0):
         self.model = build_model()
         self.data = mj.MjData(self.model)
         self.dt = self.model.opt.timestep
         self.omega = 2 * np.pi / period
         self.period = period
+        self.tray_phase = tray_phase
         self.tcp = self.model.site("tcp").id
         self.slide = self.model.joint("tray_slide").id
         self.slide_q = self.model.jnt_qposadr[self.slide]
@@ -75,7 +95,8 @@ class StackRun:
         self.follow = False
         self.on_step = on_step
 
-        self.data.qpos[self.slide_q] = TRAVEL
+        self.data.qpos[self.slide_q] = TRAVEL * np.cos(tray_phase)
+        self.data.qvel[self.slide_v] = -TRAVEL * self.omega * np.sin(tray_phase)
         self.data.qpos[:7] = HOME
         self.data.qpos[7:9] = 0.04
         self._initialize_arm()
@@ -106,11 +127,13 @@ class StackRun:
             np.clip(self.data.qpos[:7], limits[:, 0] + 0.025, limits[:, 1] - 0.025, out=self.data.qpos[:7])
         raise RuntimeError("Park pose is unreachable")
 
+    def tray_reference(self):
+        angle = self.omega * self.data.time + self.tray_phase
+        return TRAVEL * np.cos(angle), -TRAVEL * self.omega * np.sin(angle)
+
     def _step(self, position, velocity, grip, payload_kg, vertical_stiffness):
-        t = self.data.time
         displacement = self.data.qpos[self.slide_q]
-        tray_ref = TRAVEL * np.cos(self.omega * t)
-        speed_ref = -TRAVEL * self.omega * np.sin(self.omega * t)
+        tray_ref, speed_ref = self.tray_reference()
         # The reciprocating motion is a force-controlled, finite-mass slide.
         self.data.ctrl[self.tray_drive] = (
             -self.model.body_mass[self.tray] * self.omega**2 * tray_ref
@@ -173,7 +196,14 @@ class StackRun:
                 touching_fingers.add(self.model.geom_bodyid[contact.geom1])
         return self.fingers <= touching_fingers
 
-    def place(self, layer):
+    def _landing_target(self, layer, landing):
+        return landing
+
+    def _release_ready(self, layer, landing, payload_kg, measure):
+        return True
+
+    def prepare_placement(self, layer):
+        """Grasp a block and move it to the tray-following approach pose."""
         source = self.model.body_pos[self.blocks[layer]].copy()
         landing = self.model.body_pos[self.tray].copy()
         landing[2] = TABLE_Z + (layer + 0.5) * BLOCK_WIDTH - 0.0018
@@ -190,7 +220,14 @@ class StackRun:
         self.move(f"{prefix}  Lift", lift, 0.60, grip=HOLD, payload_kg=payload)
         lift_height = float(self.data.xpos[self.blocks[layer], 2] - source[2])
         self.move(f"{prefix}  Match tray motion", above_tray, 1.08, follow=True, grip=HOLD, payload_kg=payload)
+        return Placement(layer, landing, above_tray, payload, grasped, 1000 * lift_height)
 
+    def complete_placement(self, placement, *, xy_offset=None, pre_descent_wait=0.0):
+        layer = placement.layer
+        landing = placement.landing
+        above_tray = placement.above_tray
+        payload = placement.payload_kg
+        prefix = f"{layer + 1}/{BLOCK_COUNT}"
         first_touch = None
         peak_force = 0.0
         impulse = 0.0
@@ -204,25 +241,39 @@ class StackRun:
                 peak_force = max(peak_force, normal)
                 impulse += normal * self.dt
 
+        if pre_descent_wait > 0.0:
+            self.move(f"{prefix}  Wait above tower", above_tray, pre_descent_wait,
+                      follow=True, grip=HOLD, payload_kg=payload, measure=record_landing)
         self.move(f"{prefix}  Descend with tray", landing + [0.0, 0.0, 0.023], 0.47,
                   follow=True, grip=HOLD, payload_kg=payload, measure=record_landing)
+        landing = self._landing_target(layer, landing)
+        if xy_offset is not None:
+            landing = landing + [*xy_offset, 0.0]
         self.move(f"{prefix}  Touch down", landing, 0.49, follow=True, grip=HOLD,
                   payload_kg=payload, vertical_stiffness=620.0, measure=record_landing)
         self.move(f"{prefix}  Settle", landing, 0.14, follow=True, grip=HOLD,
                   payload_kg=payload, vertical_stiffness=620.0, measure=record_landing)
-        self.move(f"{prefix}  Open gripper", landing, 0.24, follow=True,
-                  vertical_stiffness=620.0, measure=record_landing)
-        self.move(f"{prefix}  Retract", above_tray, 0.55, follow=True, measure=record_landing)
-        return {
+        released = self._release_ready(layer, landing, payload, record_landing)
+        if released:
+            self.move(f"{prefix}  Open gripper", landing, 0.24, follow=True,
+                      vertical_stiffness=620.0, measure=record_landing)
+            self.move(f"{prefix}  Retract", above_tray, 0.55, follow=True, measure=record_landing)
+        result = {
             "layer": layer + 1,
-            "grasped": grasped,
-            "lift_height_mm": 1000 * lift_height,
+            "grasped": placement.grasped,
+            "lift_height_mm": placement.lift_height_mm,
             "first_touch_s": first_touch,
             "touch_peak_n_100ms": peak_force if first_touch is not None else None,
             "touch_impulse_ns_100ms": impulse if first_touch is not None else None,
-            "supported_after_retract": self.support_force(layer) > 0.05,
+            "supported_after_retract": released and self.support_force(layer) > 0.05,
             "placed_s": self.data.time,
         }
+        if not released:
+            result["failure"] = "release_gate_timeout"
+        return result
+
+    def place(self, layer):
+        return self.complete_placement(self.prepare_placement(layer))
 
     def verify_cycle(self):
         displacement = []
@@ -270,13 +321,20 @@ class StackRun:
         }
 
     def run(self):
-        layers = [self.place(layer) for layer in range(BLOCK_COUNT)]
-        cycle = self.verify_cycle()
+        layers = []
+        for layer in range(BLOCK_COUNT):
+            layers.append(self.place(layer))
+            if "failure" in layers[-1]:
+                break
+        return self.evaluate_stack(layers)
+
+    def evaluate_stack(self, layers):
+        cycle = None if "failure" in layers[-1] else self.verify_cycle()
         success = (
-            all(layer["grasped"] and layer["lift_height_mm"] > 65.0
+            cycle is not None
+            and all(layer["grasped"] and layer["lift_height_mm"] > 65.0
                 and layer["supported_after_retract"] for layer in layers)
-            and cycle["ordered"] and cycle["arm_contact_steps"] == 0
-            and cycle["fraction_all_layers_supported"] >= 0.99
+            and cycle_is_stable(cycle)
         )
         return {
             "success": success,
@@ -284,7 +342,7 @@ class StackRun:
             "reference_period_s": self.period,
             "reference_amplitude_m": TRAVEL,
             "reference_acceleration_peak_m_s2": TRAVEL * self.omega**2,
-            "task_finished_s": layers[-1]["placed_s"],
+            "task_finished_s": layers[-1]["placed_s"] if cycle is not None else None,
             "layers": layers,
             "post_release_cycle": cycle,
         }

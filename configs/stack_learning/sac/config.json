@@ -1,0 +1,8 @@
+{
+  "stage": "train",
+  "algorithm": "sac",
+  "seed": 41,
+  "steps": 768,
+  "workers": 16,
+  "bank": "../bank.json"
+}

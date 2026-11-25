@@ -1,0 +1,11 @@
+{
+  "stage": "evaluate",
+  "bank": "../bank.json",
+  "models": {
+    "sac": "../sac",
+    "td3": "../td3"
+  },
+  "random_seed": 824,
+  "workers": 12,
+  "output": "summary.json"
+}
